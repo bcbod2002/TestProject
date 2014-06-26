@@ -24,6 +24,7 @@
 		B0221903193820C500305E3A /* MultiSplitCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0221902193820C500305E3A /* MultiSplitCollectionView.m */; };
 		B0221906193820DD00305E3A /* MultiSplitCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0221905193820DD00305E3A /* MultiSplitCollectionViewCell.m */; };
 		B022190919388D8A00305E3A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B022190819388D8A00305E3A /* QuartzCore.framework */; };
+		B0428B25195BC2EF007FA624 /* AppNotificationMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0428B24195BC2EF007FA624 /* AppNotificationMessage.m */; };
 		B096F12E191B626600218D8D /* FacebookPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B096F12D191B626600218D8D /* FacebookPopViewController.m */; };
 		B0B2094A18DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B2094918DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m */; };
 		B0C43C9C1919CA1900F2A670 /* PageInitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C43C9B1919CA1900F2A670 /* PageInitViewController.m */; };
@@ -68,6 +69,8 @@
 		B0221904193820DD00305E3A /* MultiSplitCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSplitCollectionViewCell.h; sourceTree = "<group>"; };
 		B0221905193820DD00305E3A /* MultiSplitCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSplitCollectionViewCell.m; sourceTree = "<group>"; };
 		B022190819388D8A00305E3A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B0428B23195BC2EF007FA624 /* AppNotificationMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNotificationMessage.h; sourceTree = "<group>"; };
+		B0428B24195BC2EF007FA624 /* AppNotificationMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNotificationMessage.m; sourceTree = "<group>"; };
 		B096F12C191B626600218D8D /* FacebookPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookPopViewController.h; sourceTree = "<group>"; };
 		B096F12D191B626600218D8D /* FacebookPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookPopViewController.m; sourceTree = "<group>"; };
 		B0B2094818DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAutoLayoutTableViewController.h; sourceTree = "<group>"; };
@@ -196,6 +199,7 @@
 		B02218FB1938200D00305E3A /* ExtendLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B0428B22195BC2D4007FA624 /* AppNotificationMessage */,
 				B0221900193820B800305E3A /* MultiSplitCollectionView */,
 			);
 			path = ExtendLibrary;
@@ -210,6 +214,15 @@
 				B0221905193820DD00305E3A /* MultiSplitCollectionViewCell.m */,
 			);
 			path = MultiSplitCollectionView;
+			sourceTree = "<group>";
+		};
+		B0428B22195BC2D4007FA624 /* AppNotificationMessage */ = {
+			isa = PBXGroup;
+			children = (
+				B0428B23195BC2EF007FA624 /* AppNotificationMessage.h */,
+				B0428B24195BC2EF007FA624 /* AppNotificationMessage.m */,
+			);
+			path = AppNotificationMessage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +364,7 @@
 				B0221906193820DD00305E3A /* MultiSplitCollectionViewCell.m in Sources */,
 				B0221903193820C500305E3A /* MultiSplitCollectionView.m in Sources */,
 				B00EB14A18D6DC9F00303DF2 /* MainViewController.m in Sources */,
+				B0428B25195BC2EF007FA624 /* AppNotificationMessage.m in Sources */,
 				B096F12E191B626600218D8D /* FacebookPopViewController.m in Sources */,
 				B00EB14418D6DC9F00303DF2 /* MainAppDelegate.m in Sources */,
 				B0C43CA51919E35200F2A670 /* PageContentViewController.m in Sources */,
