@@ -21,6 +21,15 @@
 		B00EB15518D6DC9F00303DF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00EB13718D6DC9F00303DF2 /* UIKit.framework */; };
 		B00EB15D18D6DC9F00303DF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B00EB15B18D6DC9F00303DF2 /* InfoPlist.strings */; };
 		B00EB15F18D6DC9F00303DF2 /* TestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B00EB15E18D6DC9F00303DF2 /* TestProjectTests.m */; };
+		B0221903193820C500305E3A /* MultiSplitCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0221902193820C500305E3A /* MultiSplitCollectionView.m */; };
+		B0221906193820DD00305E3A /* MultiSplitCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0221905193820DD00305E3A /* MultiSplitCollectionViewCell.m */; };
+		B022190919388D8A00305E3A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B022190819388D8A00305E3A /* QuartzCore.framework */; };
+		B096F12E191B626600218D8D /* FacebookPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B096F12D191B626600218D8D /* FacebookPopViewController.m */; };
+		B0B2094A18DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B2094918DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m */; };
+		B0C43C9C1919CA1900F2A670 /* PageInitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C43C9B1919CA1900F2A670 /* PageInitViewController.m */; };
+		B0C43CA51919E35200F2A670 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C43CA41919E35200F2A670 /* PageContentViewController.m */; };
+		B0D7B69B18DA770B0095C471 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D7B69A18DA770B0095C471 /* CoreData.framework */; };
+		FCC3E7FD0FF645D49B05BFA5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AED9780FC353400697DA57C9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AED9780FC353400697DA57C9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00EB13018D6DC9F00303DF2 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00EB13318D6DC9F00303DF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B00EB13518D6DC9F00303DF2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +63,21 @@
 		B00EB15A18D6DC9F00303DF2 /* TestProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestProjectTests-Info.plist"; sourceTree = "<group>"; };
 		B00EB15C18D6DC9F00303DF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B00EB15E18D6DC9F00303DF2 /* TestProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProjectTests.m; sourceTree = "<group>"; };
+		B0221901193820C500305E3A /* MultiSplitCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSplitCollectionView.h; sourceTree = "<group>"; };
+		B0221902193820C500305E3A /* MultiSplitCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSplitCollectionView.m; sourceTree = "<group>"; };
+		B0221904193820DD00305E3A /* MultiSplitCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSplitCollectionViewCell.h; sourceTree = "<group>"; };
+		B0221905193820DD00305E3A /* MultiSplitCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSplitCollectionViewCell.m; sourceTree = "<group>"; };
+		B022190819388D8A00305E3A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B096F12C191B626600218D8D /* FacebookPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookPopViewController.h; sourceTree = "<group>"; };
+		B096F12D191B626600218D8D /* FacebookPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookPopViewController.m; sourceTree = "<group>"; };
+		B0B2094818DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAutoLayoutTableViewController.h; sourceTree = "<group>"; };
+		B0B2094918DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewAutoLayoutTableViewController.m; sourceTree = "<group>"; };
+		B0C43C9A1919CA1900F2A670 /* PageInitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageInitViewController.h; sourceTree = "<group>"; };
+		B0C43C9B1919CA1900F2A670 /* PageInitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageInitViewController.m; sourceTree = "<group>"; };
+		B0C43CA31919E35200F2A670 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		B0C43CA41919E35200F2A670 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		B0D7B69A18DA770B0095C471 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CD7EE4EE758F41F4B76F1113 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +85,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B022190919388D8A00305E3A /* QuartzCore.framework in Frameworks */,
+				B0D7B69B18DA770B0095C471 /* CoreData.framework in Frameworks */,
 				B00EB13618D6DC9F00303DF2 /* CoreGraphics.framework in Frameworks */,
 				B00EB13818D6DC9F00303DF2 /* UIKit.framework in Frameworks */,
 				B00EB13418D6DC9F00303DF2 /* Foundation.framework in Frameworks */,
+				FCC3E7FD0FF645D49B05BFA5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +110,12 @@
 		B00EB12718D6DC9F00303DF2 = {
 			isa = PBXGroup;
 			children = (
+				B02218FB1938200D00305E3A /* ExtendLibrary */,
 				B00EB13918D6DC9F00303DF2 /* TestProject */,
 				B00EB15818D6DC9F00303DF2 /* TestProjectTests */,
 				B00EB13218D6DC9F00303DF2 /* Frameworks */,
 				B00EB13118D6DC9F00303DF2 /* Products */,
+				CD7EE4EE758F41F4B76F1113 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +131,13 @@
 		B00EB13218D6DC9F00303DF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B022190819388D8A00305E3A /* QuartzCore.framework */,
+				B0D7B69A18DA770B0095C471 /* CoreData.framework */,
 				B00EB13318D6DC9F00303DF2 /* Foundation.framework */,
 				B00EB13518D6DC9F00303DF2 /* CoreGraphics.framework */,
 				B00EB13718D6DC9F00303DF2 /* UIKit.framework */,
 				B00EB15218D6DC9F00303DF2 /* XCTest.framework */,
+				AED9780FC353400697DA57C9 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,9 +147,17 @@
 			children = (
 				B00EB14218D6DC9F00303DF2 /* MainAppDelegate.h */,
 				B00EB14318D6DC9F00303DF2 /* MainAppDelegate.m */,
-				B00EB14518D6DC9F00303DF2 /* Main.storyboard */,
 				B00EB14818D6DC9F00303DF2 /* MainViewController.h */,
 				B00EB14918D6DC9F00303DF2 /* MainViewController.m */,
+				B0B2094818DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.h */,
+				B0B2094918DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m */,
+				B0C43C9A1919CA1900F2A670 /* PageInitViewController.h */,
+				B0C43C9B1919CA1900F2A670 /* PageInitViewController.m */,
+				B0C43CA31919E35200F2A670 /* PageContentViewController.h */,
+				B0C43CA41919E35200F2A670 /* PageContentViewController.m */,
+				B096F12C191B626600218D8D /* FacebookPopViewController.h */,
+				B096F12D191B626600218D8D /* FacebookPopViewController.m */,
+				B00EB14518D6DC9F00303DF2 /* Main.storyboard */,
 				B00EB14B18D6DC9F00303DF2 /* Images.xcassets */,
 				B00EB13A18D6DC9F00303DF2 /* Supporting Files */,
 			);
@@ -152,6 +193,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B02218FB1938200D00305E3A /* ExtendLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				B0221900193820B800305E3A /* MultiSplitCollectionView */,
+			);
+			path = ExtendLibrary;
+			sourceTree = "<group>";
+		};
+		B0221900193820B800305E3A /* MultiSplitCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B0221901193820C500305E3A /* MultiSplitCollectionView.h */,
+				B0221902193820C500305E3A /* MultiSplitCollectionView.m */,
+				B0221904193820DD00305E3A /* MultiSplitCollectionViewCell.h */,
+				B0221905193820DD00305E3A /* MultiSplitCollectionViewCell.m */,
+			);
+			path = MultiSplitCollectionView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B00EB16218D6DC9F00303DF2 /* Build configuration list for PBXNativeTarget "TestProject" */;
 			buildPhases = (
+				DF73889E9A494F90999BE502 /* Check Pods Manifest.lock */,
 				B00EB12C18D6DC9F00303DF2 /* Sources */,
 				B00EB12D18D6DC9F00303DF2 /* Frameworks */,
 				B00EB12E18D6DC9F00303DF2 /* Resources */,
+				DAAB0F13A51645BEB7B874E0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,14 +307,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DAAB0F13A51645BEB7B874E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF73889E9A494F90999BE502 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B00EB12C18D6DC9F00303DF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0B2094A18DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m in Sources */,
 				B00EB14018D6DC9F00303DF2 /* main.m in Sources */,
+				B0C43C9C1919CA1900F2A670 /* PageInitViewController.m in Sources */,
+				B0221906193820DD00305E3A /* MultiSplitCollectionViewCell.m in Sources */,
+				B0221903193820C500305E3A /* MultiSplitCollectionView.m in Sources */,
 				B00EB14A18D6DC9F00303DF2 /* MainViewController.m in Sources */,
+				B096F12E191B626600218D8D /* FacebookPopViewController.m in Sources */,
 				B00EB14418D6DC9F00303DF2 /* MainAppDelegate.m in Sources */,
+				B0C43CA51919E35200F2A670 /* PageContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +475,7 @@
 		};
 		B00EB16318D6DC9F00303DF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD7EE4EE758F41F4B76F1113 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +489,7 @@
 		};
 		B00EB16418D6DC9F00303DF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD7EE4EE758F41F4B76F1113 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +560,7 @@
 				B00EB16418D6DC9F00303DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B00EB16518D6DC9F00303DF2 /* Build configuration list for PBXNativeTarget "TestProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +569,7 @@
 				B00EB16718D6DC9F00303DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
