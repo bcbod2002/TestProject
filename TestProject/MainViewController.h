@@ -11,6 +11,8 @@
 #import <pop/POP.h>
 #import <QuartzCore/QuartzCore.h>
 
+#import "AppNotificationMessage.h"
+
 @interface MainViewController : UIViewController <UIGestureRecognizerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIProgressView *progressViewTest;
@@ -21,5 +23,8 @@
 - (IBAction)pageViewChange:(id)sender;
 - (IBAction)facebookPop:(UIButton *)sender;
 - (IBAction)caKeyFrameAnimation:(id)sender;
+- (IBAction)appNotificationAnimation:(id)sender;
+
+@property (strong, nonatomic) AppNotificationMessage *appnotificationTest;
 
 @end

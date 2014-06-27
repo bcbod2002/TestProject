@@ -30,6 +30,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
 //    [self progressViewTest];
+    [self createAppNotificationMessage];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -521,6 +522,13 @@
     [self viewCAKeyframeAnimationTest];
 }
 
+- (IBAction)appNotificationAnimation:(id)sender
+{
+//    [_appnotificationTest perspectiveAppear];
+    [_appnotificationTest circleAppear];
+//    [_appnotificationTest circleMaskwithOtherMask];
+}
+
 -(void)viewCAKeyframeAnimationTest
 {
     UIView *testCAKeyFrameView = [[UIView alloc] initWithFrame:CGRectMake(100, 150, 65, 65)];
@@ -637,6 +645,13 @@
 -(CATransform3D)CATransform3DPerspect:(CATransform3D)t with:(CGPoint)center and:(float)disZ
 {
     return CATransform3DConcat(t, [self CATransform3DMakePerspective:center with:disZ]);
+}
+
+#pragma mark - AppNotificationMessage
+-(void)createAppNotificationMessage
+{
+    _appnotificationTest = [[AppNotificationMessage alloc] initWithMessageTitle:@"test"];
+    [self.view addSubview:_appnotificationTest];
 }
 
 
