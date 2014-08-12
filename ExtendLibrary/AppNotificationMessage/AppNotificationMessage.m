@@ -61,64 +61,190 @@
     [anchorZSpin setFillMode:kCAFillModeForwards];
     [anchorZSpin setDelegate:self];
     
-    [self.layer addAnimation:anchorZSpin forKey:@"spinZ"];
+//    [self.layer addAnimation:anchorZSpin forKey:@"spinZ"];
     
     // Triangle
     CAShapeLayer *triangleLayer = [CAShapeLayer layer];
     triangleLayer.fillColor = [UIColor blueColor].CGColor;
+
+    
     triangleLayer.strokeColor = [UIColor blackColor].CGColor;
-    triangleLayer.lineWidth = 1;
+    triangleLayer.lineWidth = 2;
     
     UIBezierPath *squarePath = [UIBezierPath bezierPath];
-    CGPoint firstSq = CGPointMake(0, 0);
+    CGPoint firstSq = CGPointMake(25, 25);
     CGPoint secondSq = CGPointMake(25, 0);
-    CGPoint thirdSq = CGPointMake(25, 25);
+    CGPoint thirdSq = CGPointMake(0, 0);
     CGPoint forthSq = CGPointMake(0, 25);
     
-    [squarePath moveToPoint:firstSq];
+    [squarePath moveToPoint:forthSq];
+    [squarePath addLineToPoint:firstSq];
     [squarePath addLineToPoint:secondSq];
     [squarePath addLineToPoint:thirdSq];
     [squarePath addLineToPoint:forthSq];
-    [squarePath addLineToPoint:firstSq];
     [squarePath closePath];
 //    CGPathRef moveSq = squarePath.
     
+    // Bezier
     UIBezierPath *circleBezPath = [UIBezierPath bezierPath];
     
-    CGPoint center =  CGPointMake(25, 12.5);
-    CGPoint first = CGPointMake(25, 0);
-    CGPoint second = CGPointMake(25, 25);
-    CGPoint third = CGPointMake(0, 12.5);
+    CGPoint center =  CGPointMake(12.5, 12.5);
+    CGPoint first = CGPointMake(12.5, 0);
+    CGPoint second = CGPointMake(12.5, 25);
+    CGPoint third = CGPointMake(-12.5, 12.5);
     
     [circleBezPath moveToPoint:first];
-    [circleBezPath addArcWithCenter:center radius:12.5 startAngle:-M_PI * 3 / 2 endAngle:-M_PI / 2 clockwise:NO];
+//    [circleBezPath addArcWithCenter:center radius:12.5 startAngle:-M_PI * 3 / 2 endAngle:-M_PI / 2 clockwise:NO];
+    [circleBezPath addArcWithCenter:center radius:12.5 startAngle:-M_PI / 2 endAngle:-M_PI * 3 / 2 clockwise:YES];
+//    [circleBezPath addArcWithCenter:center radius:12.5 startAngle:-M_PI * 3 / 2 endAngle:0 clockwise:NO];
+//    [circleBezPath addArcWithCenter:center radius:12.5 startAngle:M_PI / 2 endAngle:0 clockwise:NO];
     [circleBezPath addLineToPoint:second];
     [circleBezPath addLineToPoint:third];
     [circleBezPath addLineToPoint:first];
-    [circleBezPath closePath];
+//    [circleBezPath closePath];
     
+    // Bezier Full Circle
+//    UIBezierPath *fullCirclePath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(12.5, 12.5) radius:12.5 startAngle:M_PI * 3 / 2 endAngle:-M_PI * 3 / 2 clockwise:NO];
+    UIBezierPath *fullCirclePath = [UIBezierPath bezierPath];
+    
+    CGPoint circleCenter = CGPointMake(12.5, 12.5);
+//    CGPoint circlefirst = CGPointMake(25, 0);
+    [fullCirclePath moveToPoint:CGPointMake(12.5, 0)];
+    [fullCirclePath addArcWithCenter:circleCenter radius:12.5 startAngle:M_PI * 0.5 endAngle:M_PI * 1.5 clockwise:NO];
+    [fullCirclePath addArcWithCenter:circleCenter radius:12.5 startAngle:M_PI * 1.5 endAngle:M_PI * 0.5 clockwise:NO];
+    
+    
+    // NormalPath
+    CGMutablePathRef normalPath = CGPathCreateMutable();
+    CGPoint firstNormal = CGPointMake(12.5, 0);
+    CGPoint secondNormal = CGPointMake(12.5, 25);
+    CGPoint thirdNormal = CGPointMake(-12.5, 12.5);
+//    CGPoint forthNormal = CGPointMake(-12.5, 12.5);
+    CGPathMoveToPoint(normalPath, NULL, secondNormal.x, secondNormal.y);
+    CGPathAddLineToPoint(normalPath, NULL, thirdNormal.x, thirdNormal.y);
+    CGPathAddLineToPoint(normalPath, NULL, firstNormal.x, firstNormal.y);
+    CGPathAddLineToPoint(normalPath, NULL, secondNormal.x, secondNormal.y);
+    
+    
+    // Layer Setting
     CGPathRef firstPath = squarePath.CGPath;
     CGPathRef secondPath = circleBezPath.CGPath;
+    CGPathRef thirdPath = normalPath;
+    CGPathRef forthPath = fullCirclePath.CGPath;
+    
     
 //    triangleLayer.path = secondPath;
-    triangleLayer.path = firstPath;
+//    triangleLayer.path = firstPath;
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"path"];
     animation.duration = 1.0;
     animation.fromValue = (__bridge id)firstPath;
-    animation.toValue = (__bridge id)secondPath;
+//    animation.toValue = (__bridge id)secondPath;
+    animation.toValue = (__bridge id)thirdPath;
     animation.removedOnCompletion = NO;
     animation.fillMode = kCAFillModeForwards;
-    [triangleLayer addAnimation:animation forKey:nil];
+//    [triangleLayer addAnimation:animation forKey:nil];
     
-    [self.layer addSublayer:triangleLayer];
-//    [self.layer addAnimation:animation forKey:@"nono"];
-    
+//    [self.layer addSublayer:triangleLayer];
+//    [self.layer addAnimation:animation forKey:nil];
+    CFRelease(normalPath);
 //    [self.layer addSublayer:[self createPieSlice]];
+    
+    
+    // CAKeyFrameAnimation
+    CAKeyframeAnimation *keyAnimation = [CAKeyframeAnimation animationWithKeyPath:@"path"];
+    keyAnimation.duration = 1.0;
+//    keyAnimation.values = @[(__bridge id)forthPath, (__bridge id)secondPath];
+//    keyAnimation.values = @[(__bridge id)secondPath, (__bridge id)forthPath];
+//    keyAnimation.values = @[(__bridge id)thirdPath, (__bridge id)secondPath];
+    keyAnimation.values = @[(__bridge id)secondPath, (__bridge id)thirdPath];
+    keyAnimation.fillMode = kCAFillModeForwards;
+    keyAnimation.removedOnCompletion = NO;
+//    [triangleLayer addAnimation:keyAnimation forKey:nil];
+    [self.layer addSublayer:triangleLayer];
+    
+    CABasicAnimation *originalAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
+    originalAnimation.duration = 1.0;
+//    originalAnimation.fromValue = (__bridge id)secondPath;
+    originalAnimation.fromValue = (__bridge id)secondPath;
+    originalAnimation.toValue = (__bridge id)thirdPath;
+    originalAnimation.fillMode = kCAFillModeForwards;
+    originalAnimation.removedOnCompletion = NO;
+    
+    [triangleLayer addAnimation:[self vacuumAnimation] forKey:nil];
+    
+    CABasicAnimation *scaleUpAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale.x"];
+    scaleUpAnimation.duration = 1.0;
+    scaleUpAnimation.fillMode = kCAFillModeForwards;
+    scaleUpAnimation.fromValue = [NSNumber numberWithFloat:1];
+    scaleUpAnimation.toValue = [NSNumber numberWithFloat:10];
+    scaleUpAnimation.removedOnCompletion = NO;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        sleep(1);
+        dispatch_async(dispatch_get_main_queue(), ^{
+//            [triangleLayer addAnimation:originalAnimation forKey:nil];
+//            [triangleLayer addAnimation:scaleUpAnimation forKey:nil];
+        });
+    });
+    
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        sleep(3);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [triangleLayer removeFromSuperlayer];
+        });
+    });
 }
 
 -(void)circleDisappear
 {
+}
+
+-(CABasicAnimation *)vacuumAnimation
+{
+    UIBezierPath *circleBezPath = [UIBezierPath bezierPath];
+    
+    CGPoint centerOne = CGPointMake(0, 0);
+    CGPoint centerTwo = CGPointMake(0, 25);
+    CGPoint first = CGPointMake(12.5, 0);
+    CGPoint second = CGPointMake(12.5, 25);
+    CGPoint third = CGPointMake(-12.5, 12.5);
+    
+    [circleBezPath moveToPoint:first];
+    [circleBezPath addLineToPoint:second];
+    [circleBezPath addArcWithCenter:centerTwo radius:12.5 startAngle:0 endAngle:M_PI * 3 / 2 clockwise:NO];
+    
+    
+    [circleBezPath moveToPoint:first];
+    [circleBezPath addArcWithCenter:centerOne radius:12.5 startAngle:0 endAngle:M_PI / 2 clockwise:YES];
+//    [circleBezPath addArcWithCenter:center radius:12.5 startAngle:2 * M_PI endAngle:M_PI / 2 clockwise:YES];
+    
+    
+    UIBezierPath *squarePath = [UIBezierPath bezierPath];
+    CGPoint one = CGPointMake(25, 0);
+    CGPoint two = CGPointMake(25, 25);
+    CGPoint three = CGPointMake(0, 25);
+    CGPoint four = CGPointMake(0, 0);
+    
+    [squarePath moveToPoint:one];
+    [squarePath addLineToPoint:two];
+    [squarePath addLineToPoint:three];
+    [squarePath addLineToPoint:four];
+    [squarePath addLineToPoint:one];
+    
+    CGPathRef onePath = squarePath.CGPath;
+    CGPathRef twoPath = circleBezPath.CGPath;
+    
+    
+    CABasicAnimation *originalAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
+    originalAnimation.duration = 1.0;
+    //    originalAnimation.fromValue = (__bridge id)secondPath;
+    originalAnimation.fromValue = (__bridge id)onePath;
+    originalAnimation.toValue = (__bridge id)twoPath;
+    originalAnimation.fillMode = kCAFillModeForwards;
+    originalAnimation.removedOnCompletion = NO;
+    
+    return originalAnimation;
 }
 
 -(void)perspectiveAppear

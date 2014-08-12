@@ -438,6 +438,12 @@
     [self presentViewController:pageViewChange animated:YES completion:nil];
 }
 
+- (IBAction)mpMoviePlayer:(id)sender
+{
+    UIViewController *mpMoviePlayer = [self.storyboard instantiateViewControllerWithIdentifier:@"moveMpMoviePlayer"];
+    [self presentViewController:mpMoviePlayer animated:YES completion:nil];
+}
+
 #pragma mark - String Replace
 -(void)stringReplaceTest
 {
@@ -528,6 +534,8 @@
     [_appnotificationTest circleAppear];
 //    [_appnotificationTest circleMaskwithOtherMask];
 }
+
+
 
 -(void)viewCAKeyframeAnimationTest
 {

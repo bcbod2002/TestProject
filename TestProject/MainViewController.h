@@ -24,6 +24,7 @@
 - (IBAction)facebookPop:(UIButton *)sender;
 - (IBAction)caKeyFrameAnimation:(id)sender;
 - (IBAction)appNotificationAnimation:(id)sender;
+- (IBAction)mpMoviePlayer:(id)sender;
 
 @property (strong, nonatomic) AppNotificationMessage *appnotificationTest;
 
