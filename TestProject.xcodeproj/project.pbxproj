@@ -25,6 +25,7 @@
 		B0221906193820DD00305E3A /* MultiSplitCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0221905193820DD00305E3A /* MultiSplitCollectionViewCell.m */; };
 		B022190919388D8A00305E3A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B022190819388D8A00305E3A /* QuartzCore.framework */; };
 		B0428B25195BC2EF007FA624 /* AppNotificationMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0428B24195BC2EF007FA624 /* AppNotificationMessage.m */; };
+		B06D6AD41999B6C40037DF27 /* MaterialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B06D6AD31999B6C40037DF27 /* MaterialButton.m */; };
 		B096F12E191B626600218D8D /* FacebookPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B096F12D191B626600218D8D /* FacebookPopViewController.m */; };
 		B09DFAA01987A2A5004174CE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09DFA9F1987A2A5004174CE /* MediaPlayer.framework */; };
 		B09DFAA21987A2AB004174CE /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09DFAA11987A2AB004174CE /* MediaToolbox.framework */; };
@@ -75,6 +76,8 @@
 		B022190819388D8A00305E3A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B0428B23195BC2EF007FA624 /* AppNotificationMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNotificationMessage.h; sourceTree = "<group>"; };
 		B0428B24195BC2EF007FA624 /* AppNotificationMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNotificationMessage.m; sourceTree = "<group>"; };
+		B06D6AD21999B6C40037DF27 /* MaterialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialButton.h; sourceTree = "<group>"; };
+		B06D6AD31999B6C40037DF27 /* MaterialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialButton.m; sourceTree = "<group>"; };
 		B096F12C191B626600218D8D /* FacebookPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookPopViewController.h; sourceTree = "<group>"; };
 		B096F12D191B626600218D8D /* FacebookPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookPopViewController.m; sourceTree = "<group>"; };
 		B09DFA9F1987A2A5004174CE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -214,6 +217,7 @@
 		B02218FB1938200D00305E3A /* ExtendLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B06D6AD11999B6A80037DF27 /* MaterialButton */,
 				B09DFAA91987B04B004174CE /* testMpmovie.mp4 */,
 				B0428B22195BC2D4007FA624 /* AppNotificationMessage */,
 				B0221900193820B800305E3A /* MultiSplitCollectionView */,
@@ -239,6 +243,15 @@
 				B0428B24195BC2EF007FA624 /* AppNotificationMessage.m */,
 			);
 			path = AppNotificationMessage;
+			sourceTree = "<group>";
+		};
+		B06D6AD11999B6A80037DF27 /* MaterialButton */ = {
+			isa = PBXGroup;
+			children = (
+				B06D6AD21999B6C40037DF27 /* MaterialButton.h */,
+				B06D6AD31999B6C40037DF27 /* MaterialButton.m */,
+			);
+			path = MaterialButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +398,7 @@
 				B096F12E191B626600218D8D /* FacebookPopViewController.m in Sources */,
 				B00EB14418D6DC9F00303DF2 /* MainAppDelegate.m in Sources */,
 				B0C43CA51919E35200F2A670 /* PageContentViewController.m in Sources */,
+				B06D6AD41999B6C40037DF27 /* MaterialButton.m in Sources */,
 				B09DFAA81987AE1C004174CE /* TestMpMoviePlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

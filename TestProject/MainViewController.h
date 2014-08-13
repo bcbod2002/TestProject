@@ -12,6 +12,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 #import "AppNotificationMessage.h"
+#import "MaterialButton.h"
 
 @interface MainViewController : UIViewController <UIGestureRecognizerDelegate>
 

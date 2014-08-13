@@ -30,7 +30,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
 //    [self progressViewTest];
-    [self createAppNotificationMessage];
+//    [self createAppNotificationMessage];
+    [self CreateMaterialButton];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -444,6 +445,7 @@
     [self presentViewController:mpMoviePlayer animated:YES completion:nil];
 }
 
+
 #pragma mark - String Replace
 -(void)stringReplaceTest
 {
@@ -660,6 +662,17 @@
 {
     _appnotificationTest = [[AppNotificationMessage alloc] initWithMessageTitle:@"test"];
     [self.view addSubview:_appnotificationTest];
+}
+
+#pragma mark - MaterialButton
+-(void)CreateMaterialButton
+{
+    MaterialButton *materialButton = [[MaterialButton alloc] initWithFrame:CGRectMake(20, 370, 160, 40)];
+    [materialButton setTitle:@"Material Button" forState:UIControlStateNormal];
+    [materialButton setTitleColor:[UIColor colorWithWhite:1 alpha:1] forState:UIControlStateNormal];
+    [materialButton setBackgroundColor:[UIColor colorWithRed:29.f / 255.f green:155.f / 255.f blue:1 alpha:1]];
+    
+    [self.view addSubview:materialButton];
 }
 
 
