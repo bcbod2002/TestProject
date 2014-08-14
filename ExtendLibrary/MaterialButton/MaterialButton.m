@@ -23,7 +23,6 @@
         self.clipsToBounds = YES;
         
         circleAmplifyLayer = [[CALayer alloc] init];
-//        [circleAmplifyLayer setFrame:CGRectMake(tapLocation.x - (self.frame.size.width / 2), tapLocation.y - (self.frame.size.width / 2), self.frame.size.width, self.frame.size.width)];
         [circleAmplifyLayer setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.5].CGColor];
         [circleAmplifyLayer setOpacity:0];
         [circleAmplifyLayer setCornerRadius:self.frame.size.width / 2];
@@ -45,7 +44,7 @@
 -(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
 {
     tapLocation = [touch locationInView:self];
-    [circleAmplifyLayer setFrame:CGRectMake(tapLocation.x - (self.frame.size.width / 2), tapLocation.y - (self.frame.size.width / 2), self.frame.size.width, self.frame.size.width)];
+
     return NO;
 }
 //-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -71,12 +70,12 @@
 #pragma mark - IBAction CallBack Handlers
 -(void)eventTouchDown:(id)sender
 {
-    [self buttonTouchDownAnimatiom];
+    [circleAmplifyLayer setFrame:CGRectMake(tapLocation.x - (self.frame.size.width / 2), tapLocation.y - (self.frame.size.width / 2), self.frame.size.width, self.frame.size.width)];
 }
 
 -(void)eventTouchUpInside:(id)sender
 {
-    
+    [self buttonTouchDownAnimatiom];
 }
 
 -(void)eventTouchUpOutside:(id)sender
