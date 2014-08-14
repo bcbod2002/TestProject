@@ -19,13 +19,15 @@
     if (self)
     {
         // Initialization code
+        self.layer.masksToBounds = YES;
+        self.clipsToBounds = YES;
         
-        // Init CircleAmplifyLayer
         circleAmplifyLayer = [[CALayer alloc] init];
-        [circleAmplifyLayer setFrame:CGRectMake(tapLocation.x - (self.frame.size.width / 2), tapLocation.y - (self.frame.size.width / 2), self.frame.size.width, self.frame.size.width)];
+//        [circleAmplifyLayer setFrame:CGRectMake(tapLocation.x - (self.frame.size.width / 2), tapLocation.y - (self.frame.size.width / 2), self.frame.size.width, self.frame.size.width)];
+        [circleAmplifyLayer setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.5].CGColor];
+        [circleAmplifyLayer setOpacity:0];
         [circleAmplifyLayer setCornerRadius:self.frame.size.width / 2];
-        [circleAmplifyLayer setBackgroundColor:self.backgroundColor.CGColor];
-        [circleAmplifyLayer setOpacity:0.5];
+        [self.layer insertSublayer:circleAmplifyLayer atIndex:0];
         
         [self addTarget:self action:@selector(eventTouchDown:) forControlEvents:UIControlEventTouchDown];
         [self addTarget:self action:@selector(eventTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
@@ -43,8 +45,7 @@
 -(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
 {
     tapLocation = [touch locationInView:self];
-//    [self buttonTouchDownAnimatiom];
-    NSLog(@"touch Location = %f, %f", tapLocation.x, tapLocation.y);
+    [circleAmplifyLayer setFrame:CGRectMake(tapLocation.x - (self.frame.size.width / 2), tapLocation.y - (self.frame.size.width / 2), self.frame.size.width, self.frame.size.width)];
     return NO;
 }
 //-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -91,12 +92,6 @@
 #pragma mark - CAAnimation
 -(void)buttonTouchDownAnimatiom
 {
-//    CALayer *circleAmplifyLayer = [[CALayer alloc] init];
-//    [circleAmplifyLayer setFrame:CGRectMake(tapLocation.x - (self.frame.size.width / 2), tapLocation.y - (self.frame.size.width / 2), self.frame.size.width, self.frame.size.width)];
-//    [circleAmplifyLayer setCornerRadius:self.frame.size.width / 2];
-//    [circleAmplifyLayer setBackgroundColor:self.backgroundColor.CGColor];
-//    [circleAmplifyLayer setOpacity:0.5];
-    
     CABasicAnimation *circleAmplifyAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     circleAmplifyAnimation.delegate = self;
     [circleAmplifyAnimation setValue:@"circleAmplify" forKey:@"animationType"];
@@ -111,7 +106,7 @@
     circleOpacityAnimation.delegate = self;
     [circleOpacityAnimation setValue:@"circleOpacity" forKey:@"animationType"];
     circleOpacityAnimation.duration = 0.5;
-    circleOpacityAnimation.fromValue = [NSNumber numberWithFloat:1.f];
+    circleOpacityAnimation.fromValue = [NSNumber numberWithFloat:0.5f];
     circleOpacityAnimation.toValue = [NSNumber numberWithFloat:0.f];
     circleOpacityAnimation.fillMode = kCAFillModeForwards;
     circleOpacityAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
@@ -123,15 +118,7 @@
     amplifyOpacityGroupAnimation.animations = @[circleAmplifyAnimation, circleOpacityAnimation];
     amplifyOpacityGroupAnimation.duration = 0.5;
     
-    
-    
-    [circleAmplifyLayer addAnimation:amplifyOpacityGroupAnimation forKey:nil];
-    [circleAmplifyLayer rem]
-//    [self.layer addAnimation:amplifyOpacityGroupAnimation forKey:nil];
-//    [self.titleLabel.layer addSublayer:circleAmplifyLayer];
-//    [self.titleLabel.layer insertSublayer:circleAmplifyLayer atIndex:0];
-    [self.layer insertSublayer:circleAmplifyLayer atIndex:0];
-//    [self.layer addSublayer:circleAmplifyLayer];
+    [circleAmplifyLayer addAnimation:amplifyOpacityGroupAnimation forKey:@"amplifyOpacityGroup"];
 }
 
 -(void)buttonTextAnimation
@@ -147,15 +134,11 @@
 
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
-    NSLog(@"self.layer.sublayers = %@", self.layer.sublayers);
-    if ([[anim valueForKey:@"animationType"] isEqual:@"amplifyOpacityGroup"])
-    {
-        NSLog(@"self.titleLabel.layer.sublayers = %@", self.titleLabel.layer.sublayers);
-        [self.titleLabel.layer.sublayers[0] removeFromSuperlayer];
-//        [self.layer.sublayers[1] removeFromSuperlayer];
-        
-        NSLog(@"self.titleLabel = %@", self.titleLabel);
-    }
+//    if ([[anim valueForKey:@"animationType"] isEqual:@"amplifyOpacityGroup"])
+//    {
+//        [self.layer.sublayers[0] removeAllAnimations];
+//        [self.layer.sublayers[0] removeFromSuperlayer];
+//    }
 }
 /*
 // Only override drawRect: if you perform custom drawing.
