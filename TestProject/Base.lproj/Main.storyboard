@@ -78,6 +78,24 @@
             </objects>
             <point key="canvasLocation" x="1205" y="487"/>
         </scene>
+        <!--Orientation View Controller-->
+        <scene sceneID="OFU-AU-3Uw">
+            <objects>
+                <viewController id="bJM-Ar-z7t" customClass="OrientationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2dP-oT-wAd"/>
+                        <viewControllerLayoutGuide type="bottom" id="oN5-wg-tdp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yYe-zH-V6N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXf-dp-XYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205" y="1217"/>
+        </scene>
         <!--Page Content View Controller-->
         <scene sceneID="AT6-ey-mc9">
             <objects>
@@ -216,6 +234,16 @@
                                 </state>
                                 <connections>
                                     <action selector="mpMoviePlayer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q12-Rf-Od4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4g-QP-5yp">
+                                <rect key="frame" x="20" y="350" width="175" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OrientationViewController">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bJM-Ar-z7t" kind="modal" id="qmX-O9-33c"/>
                                 </connections>
                             </button>
                         </subviews>

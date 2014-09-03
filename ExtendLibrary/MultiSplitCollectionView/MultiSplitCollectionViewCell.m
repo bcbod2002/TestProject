@@ -15,11 +15,13 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        [self.layer setBorderColor:[UIColor whiteColor].CGColor];
+        [self.layer setBorderWidth:1.f];
         [self setUserInteractionEnabled:YES];
         UITapGestureRecognizer *tapTwiceChosenCell = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellAmplifyorCondense:)];
         [tapTwiceChosenCell setNumberOfTouchesRequired:2];
         [self addGestureRecognizer:tapTwiceChosenCell];
-        
+        NSLog(@"YESYESYES");
         // Make sure cell is not in full screen mode
         self.tag = 0;
     }

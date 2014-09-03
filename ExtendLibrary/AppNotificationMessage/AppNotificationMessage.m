@@ -347,6 +347,57 @@
     
     return  animation;
 }
+
+-(void)gcdTest
+{
+    //            dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    //            dispatch_group_t group = dispatch_group_create();
+    //            for (NSInteger i = 0; i < 15; ++i)
+    //            {
+    //                dispatch_group_async(group, queue, ^{
+    //                    [NSThread sleepForTimeInterval:3];
+    //                    NSLog(@"RRR %d", i);
+    //                });
+    //            }
+    ////            dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+    //            dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+    //                NSLog(@"Finish");
+    //            });
+    
+    
+    //            dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    //            dispatch_group_t group = dispatch_group_create();
+    //            dispatch_group_async(group, queue, ^{
+    //                [NSThread sleepForTimeInterval:1];
+    //                NSLog(@"group1");
+    //            });
+    //            dispatch_group_async(group, queue, ^{
+    //                [NSThread sleepForTimeInterval:2];
+    //                NSLog(@"group2");
+    //            });
+    //            dispatch_group_async(group, queue, ^{
+    //                [NSThread sleepForTimeInterval:3];
+    //                NSLog(@"group3");
+    //            });
+    //            dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+    //                NSLog(@"updateUi");
+    //            });
+    
+    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(10);
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    for (int i = 0; i < 50; i++)
+    {
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        dispatch_group_async(group, queue, ^{
+            NSLog(@"%i",i);
+            sleep(3);
+            dispatch_semaphore_signal(semaphore);
+        });
+    }
+    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
