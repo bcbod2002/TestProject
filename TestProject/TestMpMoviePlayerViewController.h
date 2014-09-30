@@ -3,7 +3,7 @@
 //  TestProject
 //
 //  Created by SSPC139 on 2014/7/29.
-//  Copyright (c) 2014年 shinsoft. All rights reserved.
+//  Copyright (c) 2014年 Goston. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -3,7 +3,7 @@
 //  TestProject
 //
 //  Created by SSPC139 on 2014/7/29.
-//  Copyright (c) 2014年 shinsoft. All rights reserved.
+//  Copyright (c) 2014年 Goston. All rights reserved.
 //
 
 #import "TestMpMoviePlayerViewController.h"
@@ -27,42 +27,50 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"testMpmovie" ofType:@"mp4"];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"testMpmovie" ofType:@"mp4"];
+    
 //    NSLog(@"path = %@", path);
-    NSURL *urlPath = [NSURL fileURLWithPath:path];
+//    NSURL *urlPath = [NSURL fileURLWithPath:path];
+    NSURL *urlPath = [NSURL URLWithString:@"http://www.mycam.tw/hls/c1005/000EC90394F0/M/all.m3u8"];
+//    NSURL *urlPath = [NSURL URLWithString:@"http://184.72.239.149/vod/smil:bigbuckbunnyiphone.smil/chunklist-b400000.m3u8"];
+//    NSURL *urlPath = [NSURL URLWithString:@"http://172.16.40.203:8000/TestHLS.m3u8"];
     NSLog(@"urlPath = %@", urlPath);
     
     
     
     _testmoviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:urlPath];
-    [_testmoviePlayerController setScalingMode:MPMovieScalingModeAspectFit];
+    [_testmoviePlayerController prepareToPlay];
+    [_testmoviePlayerController setScalingMode:MPMovieScalingModeFill];
     [_testmoviePlayerController setRepeatMode:MPMovieRepeatModeNone];
-    [_testmoviePlayerController setControlStyle:MPMovieControlStyleNone];
-    [_testmoviePlayerController setMovieSourceType:MPMovieSourceTypeFile];
-    [_testmoviePlayerController setShouldAutoplay:NO];
+    [_testmoviePlayerController setControlStyle:MPMovieControlStyleEmbedded];
+    [_testmoviePlayerController setMovieSourceType:MPMovieSourceTypeStreaming];
+    [_testmoviePlayerController setShouldAutoplay:YES];
     
     float moviewPlayerHeight = 180;
 //    [_testmoviePlayerController.view setFrame:CGRectMake(0, (568 / 2) - (moviewPlayerHeight / 2), 320, moviewPlayerHeight)];
     [_testmoviePlayerController.view setFrame:CGRectMake(0, (568 / 2) - 120, 320, 300)];
+    [_testmoviePlayerController.view setBackgroundColor:[UIColor redColor]];
     
 //    [_testmoviePlayerController.view setFrame:CGRectMake(0, 124, 320, 320)];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(movieThumbnailLoadComplete:) name:MPMoviePlayerThumbnailImageRequestDidFinishNotification object:_testmoviePlayerController];
-    [_testmoviePlayerController requestThumbnailImagesAtTimes:@[@1.0f] timeOption:MPMovieTimeOptionExact];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(movieThumbnailLoadComplete:) name:MPMoviePlayerThumbnailImageRequestDidFinishNotification object:_testmoviePlayerController];
+//    [_testmoviePlayerController requestThumbnailImagesAtTimes:@[@1.0f] timeOption:MPMovieTimeOptionExact];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackstateNotification:) name:MPMoviePlayerPlaybackStateDidChangeNotification object:_testmoviePlayerController];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackstateNotification:) name:MPMoviePlayerPlaybackStateDidChangeNotification object:_testmoviePlayerController];
     
     [self.view addSubview:_testmoviePlayerController.view];
 //    [_testmoviePlayerController stop];
 //    [_testmoviePlayerController prepareToPlay];
 //    [_testmoviePlayerController stop];
 //    [_testmoviePlayerController play];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-        sleep(3);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"WHATTTT???");
-            [_testmoviePlayerController setControlStyle:MPMovieControlStyleEmbedded];
-        });
-    });
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+//        sleep(3);
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            NSLog(@"WHATTTT???");
+//            [_testmoviePlayerController setControlStyle:MPMovieControlStyleEmbedded];
+//        });
+//    });
+    
+    [_testmoviePlayerController play];
 }
 
 //-(void)viewDidAppear:(BOOL)animated

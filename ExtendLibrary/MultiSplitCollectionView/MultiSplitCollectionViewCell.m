@@ -3,7 +3,7 @@
 //  TestProject
 //
 //  Created by shinsoft on 2014/5/30.
-//  Copyright (c) 2014年 shinsoft. All rights reserved.
+//  Copyright (c) 2014年 Goston. All rights reserved.
 //
 
 #import "MultiSplitCollectionViewCell.h"
@@ -17,11 +17,6 @@
         // Initialization code
         [self.layer setBorderColor:[UIColor whiteColor].CGColor];
         [self.layer setBorderWidth:1.f];
-        [self setUserInteractionEnabled:YES];
-        UITapGestureRecognizer *tapTwiceChosenCell = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellAmplifyorCondense:)];
-        [tapTwiceChosenCell setNumberOfTouchesRequired:2];
-        [self addGestureRecognizer:tapTwiceChosenCell];
-        NSLog(@"YESYESYES");
         // Make sure cell is not in full screen mode
         self.tag = 0;
     }

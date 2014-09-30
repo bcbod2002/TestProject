@@ -3,7 +3,7 @@
 //  TestProject
 //
 //  Created by shinsoft on 2014/5/30.
-//  Copyright (c) 2014年 shinsoft. All rights reserved.
+//  Copyright (c) 2014年 Goston. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -26,11 +26,11 @@ typedef enum {
 -(void)splitFlowLayoutChangeFinished;
 @end
 
-@interface MultiSplitCollectionView : UIView <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface MultiSplitCollectionView : UIView <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIGestureRecognizerDelegate>
 
-@property (nonatomic) NSInteger numberOfItems;
 @property (nonatomic) SplitNumber previousSplitNumber;
 @property (strong, nonatomic) id <MultiSplitCollectionViewDelegate>delegate;
+@property (nonatomic) NSInteger totalChannel;
 
 -(void)extendCollectionCellWithSplitNumber:(NSInteger) splitNumber;
 -(void)shrinkCollectionCell;

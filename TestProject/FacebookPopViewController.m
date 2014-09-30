@@ -3,7 +3,7 @@
 //  TestProject
 //
 //  Created by shinsoft on 2014/5/8.
-//  Copyright (c) 2014年 shinsoft. All rights reserved.
+//  Copyright (c) 2014年 Goston. All rights reserved.
 //
 
 #import "FacebookPopViewController.h"

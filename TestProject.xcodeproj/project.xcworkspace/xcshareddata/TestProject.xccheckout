@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D5C970BE-E5D5-4440-9491-AD4B69E28A16</string>
+	<string>B2AE9259-7D3F-4320-AD5C-EB73B3C5C9BE</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TestProject</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/bcbod2002/TestProject.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TestProject.xcworkspace</string>
+	<string>TestProject.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A832A0785E76EBB3CA0B8678F2B58F8F68A0D17C</key>
-		<string>..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/bcbod2002/TestProject.git</string>

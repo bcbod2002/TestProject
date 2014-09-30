@@ -3,7 +3,7 @@
 //  TestProject
 //
 //  Created by SSPC139 on 2014/9/3.
-//  Copyright (c) 2014年 shinsoft. All rights reserved.
+//  Copyright (c) 2014年 Goston. All rights reserved.
 //
 
 #import "OrientationViewController.h"
@@ -28,9 +28,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    PictureManagerView *testPictureManagerView = [[PictureManagerView alloc] initWithFrame:CGRectMake(0, 124, 320, 270)];
-    MultiSplitCollectionView *testSplitCollectionView = [[MultiSplitCollectionView alloc] initWithFrame:CGRectMake(0, 124, 320, 240)];
+    MultiSplitCollectionView *testSplitCollectionView = [[MultiSplitCollectionView alloc] initWithFrame:CGRectMake(0, 100, 320, 240)];
     testSplitCollectionView.delegate = self;
-    testSplitCollectionView.numberOfItems = 4;
+    testSplitCollectionView.previousSplitNumber = FoursplitNumber;
     [self.view addSubview:testSplitCollectionView];
     
 }

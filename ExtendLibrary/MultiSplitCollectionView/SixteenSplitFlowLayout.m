@@ -3,7 +3,7 @@
 //  TestProject
 //
 //  Created by SSPC139 on 2014/9/3.
-//  Copyright (c) 2014年 shinsoft. All rights reserved.
+//  Copyright (c) 2014年 Goston. All rights reserved.
 //
 
 #import "SixteenSplitFlowLayout.h"
@@ -15,7 +15,7 @@
     self = [super init];
     if (self)
     {
-        self.itemSize = CGSizeMake(60, 40);
+        self.itemSize = CGSizeMake(80, 60);
         self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         self.sectionInset = UIEdgeInsetsZero;
         self.minimumInteritemSpacing = 0;
