@@ -26,6 +26,7 @@
 		B022190919388D8A00305E3A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B022190819388D8A00305E3A /* QuartzCore.framework */; };
 		B0428B25195BC2EF007FA624 /* AppNotificationMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0428B24195BC2EF007FA624 /* AppNotificationMessage.m */; };
 		B06D6AD41999B6C40037DF27 /* MaterialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B06D6AD31999B6C40037DF27 /* MaterialButton.m */; };
+		B07154B419E63CAE00D12648 /* CoreDataTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07154B319E63CAE00D12648 /* CoreDataTestViewController.m */; };
 		B0858DCF19B6C61F000C23B4 /* OrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DCE19B6C61F000C23B4 /* OrientationViewController.m */; };
 		B0858DE519B6CAA7000C23B4 /* FourSplitFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DE419B6CAA7000C23B4 /* FourSplitFlowLayout.m */; };
 		B0858DE819B6CC2C000C23B4 /* OneSplitFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DE719B6CC2C000C23B4 /* OneSplitFlowLayout.m */; };
@@ -40,6 +41,8 @@
 		B0C43C9C1919CA1900F2A670 /* PageInitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C43C9B1919CA1900F2A670 /* PageInitViewController.m */; };
 		B0C43CA51919E35200F2A670 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C43CA41919E35200F2A670 /* PageContentViewController.m */; };
 		B0D7B69B18DA770B0095C471 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D7B69A18DA770B0095C471 /* CoreData.framework */; };
+		B0FA090819E675A800C2E62A /* country.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0FA090619E675A800C2E62A /* country.xcdatamodeld */; };
+		B0FA090B19E675D200C2E62A /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA090A19E675D200C2E62A /* Country.m */; };
 		FCC3E7FD0FF645D49B05BFA5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AED9780FC353400697DA57C9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +86,8 @@
 		B0428B24195BC2EF007FA624 /* AppNotificationMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNotificationMessage.m; sourceTree = "<group>"; };
 		B06D6AD21999B6C40037DF27 /* MaterialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialButton.h; sourceTree = "<group>"; };
 		B06D6AD31999B6C40037DF27 /* MaterialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialButton.m; sourceTree = "<group>"; };
+		B07154B219E63CAE00D12648 /* CoreDataTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTestViewController.h; sourceTree = "<group>"; };
+		B07154B319E63CAE00D12648 /* CoreDataTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestViewController.m; sourceTree = "<group>"; };
 		B0858DCD19B6C61F000C23B4 /* OrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrientationViewController.h; sourceTree = "<group>"; };
 		B0858DCE19B6C61F000C23B4 /* OrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrientationViewController.m; sourceTree = "<group>"; };
 		B0858DE319B6CAA7000C23B4 /* FourSplitFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourSplitFlowLayout.h; sourceTree = "<group>"; };
@@ -107,6 +112,9 @@
 		B0C43CA31919E35200F2A670 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		B0C43CA41919E35200F2A670 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		B0D7B69A18DA770B0095C471 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B0FA090719E675A800C2E62A /* country.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = country.xcdatamodel; sourceTree = "<group>"; };
+		B0FA090919E675D200C2E62A /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		B0FA090A19E675D200C2E62A /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
 		CD7EE4EE758F41F4B76F1113 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +203,8 @@
 				B096F12D191B626600218D8D /* FacebookPopViewController.m */,
 				B0858DCD19B6C61F000C23B4 /* OrientationViewController.h */,
 				B0858DCE19B6C61F000C23B4 /* OrientationViewController.m */,
+				B07154B219E63CAE00D12648 /* CoreDataTestViewController.h */,
+				B07154B319E63CAE00D12648 /* CoreDataTestViewController.m */,
 				B00EB14518D6DC9F00303DF2 /* Main.storyboard */,
 				B00EB14B18D6DC9F00303DF2 /* Images.xcassets */,
 				B00EB13A18D6DC9F00303DF2 /* Supporting Files */,
@@ -234,6 +244,7 @@
 		B02218FB1938200D00305E3A /* ExtendLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B0FA090519E6759E00C2E62A /* CoreDataTest */,
 				B06D6AD11999B6A80037DF27 /* MaterialButton */,
 				B09DFAA91987B04B004174CE /* testMpmovie.mp4 */,
 				B0428B22195BC2D4007FA624 /* AppNotificationMessage */,
@@ -277,6 +288,16 @@
 				B06D6AD31999B6C40037DF27 /* MaterialButton.m */,
 			);
 			path = MaterialButton;
+			sourceTree = "<group>";
+		};
+		B0FA090519E6759E00C2E62A /* CoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				B0FA090619E675A800C2E62A /* country.xcdatamodeld */,
+				B0FA090919E675D200C2E62A /* Country.h */,
+				B0FA090A19E675D200C2E62A /* Country.m */,
+			);
+			path = CoreDataTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,8 +435,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0B2094A18DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m in Sources */,
+				B07154B419E63CAE00D12648 /* CoreDataTestViewController.m in Sources */,
 				B0858DF219B70EF6000C23B4 /* SixteenSplitFlowLayout.m in Sources */,
 				B00EB14018D6DC9F00303DF2 /* main.m in Sources */,
+				B0FA090B19E675D200C2E62A /* Country.m in Sources */,
+				B0FA090819E675A800C2E62A /* country.xcdatamodeld in Sources */,
 				B0C43C9C1919CA1900F2A670 /* PageInitViewController.m in Sources */,
 				B0858DCF19B6C61F000C23B4 /* OrientationViewController.m in Sources */,
 				B0221906193820DD00305E3A /* MultiSplitCollectionViewCell.m in Sources */,
@@ -648,6 +672,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B0FA090619E675A800C2E62A /* country.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B0FA090719E675A800C2E62A /* country.xcdatamodel */,
+			);
+			currentVersion = B0FA090719E675A800C2E62A /* country.xcdatamodel */;
+			path = country.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B00EB12818D6DC9F00303DF2 /* Project object */;
 }
