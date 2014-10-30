@@ -32,6 +32,8 @@
 		B0858DE819B6CC2C000C23B4 /* OneSplitFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DE719B6CC2C000C23B4 /* OneSplitFlowLayout.m */; };
 		B0858DEC19B70D84000C23B4 /* NineSplitFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DEB19B70D84000C23B4 /* NineSplitFlowLayout.m */; };
 		B0858DF219B70EF6000C23B4 /* SixteenSplitFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DF119B70EF6000C23B4 /* SixteenSplitFlowLayout.m */; };
+		B08CAD6519ED221E007037EA /* librabbitmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B08CAD6319ED221E007037EA /* librabbitmq.a */; };
+		B08CAD6819ED297A007037EA /* RabbitMQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08CAD6719ED297A007037EA /* RabbitMQViewController.m */; };
 		B096F12E191B626600218D8D /* FacebookPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B096F12D191B626600218D8D /* FacebookPopViewController.m */; };
 		B09DFAA01987A2A5004174CE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09DFA9F1987A2A5004174CE /* MediaPlayer.framework */; };
 		B09DFAA21987A2AB004174CE /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09DFAA11987A2AB004174CE /* MediaToolbox.framework */; };
@@ -40,6 +42,8 @@
 		B0B2094A18DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B2094918DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m */; };
 		B0C43C9C1919CA1900F2A670 /* PageInitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C43C9B1919CA1900F2A670 /* PageInitViewController.m */; };
 		B0C43CA51919E35200F2A670 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C43CA41919E35200F2A670 /* PageContentViewController.m */; };
+		B0D4EC211A022E1E0067ECB2 /* TestAVFoudationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D4EC201A022E1E0067ECB2 /* TestAVFoudationViewController.m */; };
+		B0D4EC231A022F700067ECB2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D4EC221A022F700067ECB2 /* AVFoundation.framework */; };
 		B0D7B69B18DA770B0095C471 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D7B69A18DA770B0095C471 /* CoreData.framework */; };
 		B0FA090819E675A800C2E62A /* country.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0FA090619E675A800C2E62A /* country.xcdatamodeld */; };
 		B0FA090B19E675D200C2E62A /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA090A19E675D200C2E62A /* Country.m */; };
@@ -98,6 +102,13 @@
 		B0858DEB19B70D84000C23B4 /* NineSplitFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NineSplitFlowLayout.m; sourceTree = "<group>"; };
 		B0858DF019B70EF6000C23B4 /* SixteenSplitFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixteenSplitFlowLayout.h; sourceTree = "<group>"; };
 		B0858DF119B70EF6000C23B4 /* SixteenSplitFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixteenSplitFlowLayout.m; sourceTree = "<group>"; };
+		B08CAD6019ED221E007037EA /* amqp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amqp.h; sourceTree = "<group>"; };
+		B08CAD6119ED221E007037EA /* amqp_framing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amqp_framing.h; sourceTree = "<group>"; };
+		B08CAD6219ED221E007037EA /* amqp_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amqp_private.h; sourceTree = "<group>"; };
+		B08CAD6319ED221E007037EA /* librabbitmq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librabbitmq.a; sourceTree = "<group>"; };
+		B08CAD6419ED221E007037EA /* socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
+		B08CAD6619ED297A007037EA /* RabbitMQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RabbitMQViewController.h; sourceTree = "<group>"; };
+		B08CAD6719ED297A007037EA /* RabbitMQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RabbitMQViewController.m; sourceTree = "<group>"; };
 		B096F12C191B626600218D8D /* FacebookPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookPopViewController.h; sourceTree = "<group>"; };
 		B096F12D191B626600218D8D /* FacebookPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookPopViewController.m; sourceTree = "<group>"; };
 		B09DFA9F1987A2A5004174CE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -111,6 +122,9 @@
 		B0C43C9B1919CA1900F2A670 /* PageInitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageInitViewController.m; sourceTree = "<group>"; };
 		B0C43CA31919E35200F2A670 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		B0C43CA41919E35200F2A670 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		B0D4EC1F1A022E1E0067ECB2 /* TestAVFoudationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAVFoudationViewController.h; sourceTree = "<group>"; };
+		B0D4EC201A022E1E0067ECB2 /* TestAVFoudationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAVFoudationViewController.m; sourceTree = "<group>"; };
+		B0D4EC221A022F700067ECB2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B0D7B69A18DA770B0095C471 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B0FA090719E675A800C2E62A /* country.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = country.xcdatamodel; sourceTree = "<group>"; };
 		B0FA090919E675D200C2E62A /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
@@ -123,6 +137,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0D4EC231A022F700067ECB2 /* AVFoundation.framework in Frameworks */,
+				B08CAD6519ED221E007037EA /* librabbitmq.a in Frameworks */,
 				B09DFAA21987A2AB004174CE /* MediaToolbox.framework in Frameworks */,
 				B09DFAA01987A2A5004174CE /* MediaPlayer.framework in Frameworks */,
 				B022190919388D8A00305E3A /* QuartzCore.framework in Frameworks */,
@@ -171,6 +187,7 @@
 		B00EB13218D6DC9F00303DF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0D4EC221A022F700067ECB2 /* AVFoundation.framework */,
 				B09DFAA11987A2AB004174CE /* MediaToolbox.framework */,
 				B09DFA9F1987A2A5004174CE /* MediaPlayer.framework */,
 				B022190819388D8A00305E3A /* QuartzCore.framework */,
@@ -187,6 +204,8 @@
 		B00EB13918D6DC9F00303DF2 /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
+				B0D4EC1F1A022E1E0067ECB2 /* TestAVFoudationViewController.h */,
+				B0D4EC201A022E1E0067ECB2 /* TestAVFoudationViewController.m */,
 				B09DFAA61987AE1C004174CE /* TestMpMoviePlayerViewController.h */,
 				B09DFAA71987AE1C004174CE /* TestMpMoviePlayerViewController.m */,
 				B00EB14218D6DC9F00303DF2 /* MainAppDelegate.h */,
@@ -205,6 +224,8 @@
 				B0858DCE19B6C61F000C23B4 /* OrientationViewController.m */,
 				B07154B219E63CAE00D12648 /* CoreDataTestViewController.h */,
 				B07154B319E63CAE00D12648 /* CoreDataTestViewController.m */,
+				B08CAD6619ED297A007037EA /* RabbitMQViewController.h */,
+				B08CAD6719ED297A007037EA /* RabbitMQViewController.m */,
 				B00EB14518D6DC9F00303DF2 /* Main.storyboard */,
 				B00EB14B18D6DC9F00303DF2 /* Images.xcassets */,
 				B00EB13A18D6DC9F00303DF2 /* Supporting Files */,
@@ -244,6 +265,7 @@
 		B02218FB1938200D00305E3A /* ExtendLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B08CAD5F19ED221E007037EA /* rabbitmq-lib */,
 				B0FA090519E6759E00C2E62A /* CoreDataTest */,
 				B06D6AD11999B6A80037DF27 /* MaterialButton */,
 				B09DFAA91987B04B004174CE /* testMpmovie.mp4 */,
@@ -288,6 +310,18 @@
 				B06D6AD31999B6C40037DF27 /* MaterialButton.m */,
 			);
 			path = MaterialButton;
+			sourceTree = "<group>";
+		};
+		B08CAD5F19ED221E007037EA /* rabbitmq-lib */ = {
+			isa = PBXGroup;
+			children = (
+				B08CAD6019ED221E007037EA /* amqp.h */,
+				B08CAD6119ED221E007037EA /* amqp_framing.h */,
+				B08CAD6219ED221E007037EA /* amqp_private.h */,
+				B08CAD6319ED221E007037EA /* librabbitmq.a */,
+				B08CAD6419ED221E007037EA /* socket.h */,
+			);
+			path = "rabbitmq-lib";
 			sourceTree = "<group>";
 		};
 		B0FA090519E6759E00C2E62A /* CoreDataTest */ = {
@@ -350,6 +384,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = shinsoft;
 				TargetAttributes = {
+					B00EB12F18D6DC9F00303DF2 = {
+						DevelopmentTeam = EBMAL95Q6U;
+					};
 					B00EB15018D6DC9F00303DF2 = {
 						TestTargetID = B00EB12F18D6DC9F00303DF2;
 					};
@@ -447,8 +484,10 @@
 				B0858DE519B6CAA7000C23B4 /* FourSplitFlowLayout.m in Sources */,
 				B00EB14A18D6DC9F00303DF2 /* MainViewController.m in Sources */,
 				B0858DE819B6CC2C000C23B4 /* OneSplitFlowLayout.m in Sources */,
+				B0D4EC211A022E1E0067ECB2 /* TestAVFoudationViewController.m in Sources */,
 				B0428B25195BC2EF007FA624 /* AppNotificationMessage.m in Sources */,
 				B096F12E191B626600218D8D /* FacebookPopViewController.m in Sources */,
+				B08CAD6819ED297A007037EA /* RabbitMQViewController.m in Sources */,
 				B00EB14418D6DC9F00303DF2 /* MainAppDelegate.m in Sources */,
 				B0858DEC19B70D84000C23B4 /* NineSplitFlowLayout.m in Sources */,
 				B0C43CA51919E35200F2A670 /* PageContentViewController.m in Sources */,
@@ -577,11 +616,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD7EE4EE758F41F4B76F1113 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject/TestProject-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/pop\"",
+					"\"$(SRCROOT)/ExtendLibrary/rabbitmq-lib\"",
+				);
 				INFOPLIST_FILE = "TestProject/TestProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExtendLibrary/rabbitmq-lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -591,11 +641,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD7EE4EE758F41F4B76F1113 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject/TestProject-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/pop\"",
+					"\"$(SRCROOT)/ExtendLibrary/rabbitmq-lib\"",
+				);
 				INFOPLIST_FILE = "TestProject/TestProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExtendLibrary/rabbitmq-lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

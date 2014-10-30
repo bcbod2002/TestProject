@@ -31,7 +31,8 @@
     
 //    NSLog(@"path = %@", path);
 //    NSURL *urlPath = [NSURL fileURLWithPath:path];
-    NSURL *urlPath = [NSURL URLWithString:@"http://www.mycam.tw/hls/c1005/000EC90394F0/M/all.m3u8"];
+//    NSURL *urlPath = [NSURL URLWithString:@"http://www.mycam.tw/hls/c1005/000EC90394F0/M/all.m3u8"];
+    NSURL *urlPath = [NSURL URLWithString:@"https://s3-ap-southeast-1.amazonaws.com/mycamstorage/_TestFileHLS2_/all.m3u8"];
 //    NSURL *urlPath = [NSURL URLWithString:@"http://184.72.239.149/vod/smil:bigbuckbunnyiphone.smil/chunklist-b400000.m3u8"];
 //    NSURL *urlPath = [NSURL URLWithString:@"http://172.16.40.203:8000/TestHLS.m3u8"];
     NSLog(@"urlPath = %@", urlPath);

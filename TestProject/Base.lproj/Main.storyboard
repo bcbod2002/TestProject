@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
+        <!--TestAV Foudation View Controller-->
+        <scene sceneID="Da4-cT-y9k">
+            <objects>
+                <viewController id="QYf-QZ-shf" customClass="TestAVFoudationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Ad-zv-hlP"/>
+                        <viewControllerLayoutGuide type="bottom" id="tma-h5-yDY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6UM-vo-UCX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZR-ow-aIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="673" y="-176"/>
+        </scene>
         <!--Table View Auto Layout Table View Controller-->
         <scene sceneID="vMz-X0-Lxw">
             <objects>
@@ -229,6 +247,24 @@
             </objects>
             <point key="canvasLocation" x="1669" y="487"/>
         </scene>
+        <!--RabbitMQ View Controller-->
+        <scene sceneID="Zbp-0G-AaN">
+            <objects>
+                <viewController id="LSY-GS-MVm" customClass="RabbitMQViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zPG-pe-8xu"/>
+                        <viewControllerLayoutGuide type="bottom" id="4P4-k9-dTm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="429-qe-YXp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Uc-JQ-rtR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2477" y="1193"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -341,6 +377,24 @@
                                 </state>
                                 <connections>
                                     <segue destination="j2g-MD-2dd" kind="modal" id="uDt-za-O9O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SM-wa-yOo">
+                                <rect key="frame" x="198" y="206" width="102" height="30"/>
+                                <state key="normal" title="RabbitMQ Test">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LSY-GS-MVm" kind="modal" id="zBC-3L-Ea9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBd-b5-Tx1">
+                                <rect key="frame" x="20" y="274" width="119" height="30"/>
+                                <state key="normal" title="AVFoundation">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QYf-QZ-shf" kind="modal" id="W0d-0Q-WEx"/>
                                 </connections>
                             </button>
                         </subviews>
