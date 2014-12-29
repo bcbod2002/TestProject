@@ -675,6 +675,14 @@
     [self.view addSubview:materialButton];
 }
 
+#pragma mark - Custom Button View
+- (IBAction)testButtonAction:(id)sender
+{
+    _pushAnimation = [[TestViewControllerTransition alloc] init];
+    _interactionController = [[UIPercentDrivenInteractiveTransition alloc] init];
+
+}
+
 
 -(void)mutableCopyTest
 {

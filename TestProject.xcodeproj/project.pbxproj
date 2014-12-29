@@ -21,10 +21,13 @@
 		B00EB15518D6DC9F00303DF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00EB13718D6DC9F00303DF2 /* UIKit.framework */; };
 		B00EB15D18D6DC9F00303DF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B00EB15B18D6DC9F00303DF2 /* InfoPlist.strings */; };
 		B00EB15F18D6DC9F00303DF2 /* TestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B00EB15E18D6DC9F00303DF2 /* TestProjectTests.m */; };
+		B012831A1A36F8AB00741E0C /* TestViewControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B01283191A36F8AB00741E0C /* TestViewControllerTransition.m */; };
+		B02153BA1A1CA8B0004465A7 /* GWHttpMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = B02153B91A1CA8B0004465A7 /* GWHttpMethods.m */; };
 		B0221903193820C500305E3A /* MultiSplitCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0221902193820C500305E3A /* MultiSplitCollectionView.m */; };
 		B0221906193820DD00305E3A /* MultiSplitCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0221905193820DD00305E3A /* MultiSplitCollectionViewCell.m */; };
 		B022190919388D8A00305E3A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B022190819388D8A00305E3A /* QuartzCore.framework */; };
 		B0428B25195BC2EF007FA624 /* AppNotificationMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0428B24195BC2EF007FA624 /* AppNotificationMessage.m */; };
+		B05BEE881A03688C007E0884 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05BEE871A03688C007E0884 /* CoreMedia.framework */; };
 		B06D6AD41999B6C40037DF27 /* MaterialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B06D6AD31999B6C40037DF27 /* MaterialButton.m */; };
 		B07154B419E63CAE00D12648 /* CoreDataTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07154B319E63CAE00D12648 /* CoreDataTestViewController.m */; };
 		B0858DCF19B6C61F000C23B4 /* OrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DCE19B6C61F000C23B4 /* OrientationViewController.m */; };
@@ -45,6 +48,10 @@
 		B0D4EC211A022E1E0067ECB2 /* TestAVFoudationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D4EC201A022E1E0067ECB2 /* TestAVFoudationViewController.m */; };
 		B0D4EC231A022F700067ECB2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D4EC221A022F700067ECB2 /* AVFoundation.framework */; };
 		B0D7B69B18DA770B0095C471 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D7B69A18DA770B0095C471 /* CoreData.framework */; };
+		B0D907041A51619500B60823 /* AlbumFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D907011A51619500B60823 /* AlbumFullViewController.m */; };
+		B0D907051A51619500B60823 /* SHNPictureManagerCtrller.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D907031A51619500B60823 /* SHNPictureManagerCtrller.m */; };
+		B0DD27401A318D02005C5845 /* TestButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DD273F1A318D02005C5845 /* TestButton.m */; };
+		B0DD27431A318F0A005C5845 /* TestButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DD27421A318F0A005C5845 /* TestButtonViewController.m */; };
 		B0FA090819E675A800C2E62A /* country.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0FA090619E675A800C2E62A /* country.xcdatamodeld */; };
 		B0FA090B19E675D200C2E62A /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA090A19E675D200C2E62A /* Country.m */; };
 		FCC3E7FD0FF645D49B05BFA5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AED9780FC353400697DA57C9 /* libPods.a */; };
@@ -81,13 +88,19 @@
 		B00EB15A18D6DC9F00303DF2 /* TestProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestProjectTests-Info.plist"; sourceTree = "<group>"; };
 		B00EB15C18D6DC9F00303DF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B00EB15E18D6DC9F00303DF2 /* TestProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProjectTests.m; sourceTree = "<group>"; };
+		B01283181A36F8AB00741E0C /* TestViewControllerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewControllerTransition.h; sourceTree = "<group>"; };
+		B01283191A36F8AB00741E0C /* TestViewControllerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerTransition.m; sourceTree = "<group>"; };
+		B02153B81A1CA8B0004465A7 /* GWHttpMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWHttpMethods.h; sourceTree = "<group>"; };
+		B02153B91A1CA8B0004465A7 /* GWHttpMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWHttpMethods.m; sourceTree = "<group>"; };
 		B0221901193820C500305E3A /* MultiSplitCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSplitCollectionView.h; sourceTree = "<group>"; };
 		B0221902193820C500305E3A /* MultiSplitCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSplitCollectionView.m; sourceTree = "<group>"; };
 		B0221904193820DD00305E3A /* MultiSplitCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSplitCollectionViewCell.h; sourceTree = "<group>"; };
 		B0221905193820DD00305E3A /* MultiSplitCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSplitCollectionViewCell.m; sourceTree = "<group>"; };
 		B022190819388D8A00305E3A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B03B2AA51A30652B007CCCF7 /* nvr.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nvr.mp4; sourceTree = "<group>"; };
 		B0428B23195BC2EF007FA624 /* AppNotificationMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNotificationMessage.h; sourceTree = "<group>"; };
 		B0428B24195BC2EF007FA624 /* AppNotificationMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNotificationMessage.m; sourceTree = "<group>"; };
+		B05BEE871A03688C007E0884 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		B06D6AD21999B6C40037DF27 /* MaterialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialButton.h; sourceTree = "<group>"; };
 		B06D6AD31999B6C40037DF27 /* MaterialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialButton.m; sourceTree = "<group>"; };
 		B07154B219E63CAE00D12648 /* CoreDataTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTestViewController.h; sourceTree = "<group>"; };
@@ -126,6 +139,14 @@
 		B0D4EC201A022E1E0067ECB2 /* TestAVFoudationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAVFoudationViewController.m; sourceTree = "<group>"; };
 		B0D4EC221A022F700067ECB2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B0D7B69A18DA770B0095C471 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B0D907001A51619500B60823 /* AlbumFullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumFullViewController.h; sourceTree = "<group>"; };
+		B0D907011A51619500B60823 /* AlbumFullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumFullViewController.m; sourceTree = "<group>"; };
+		B0D907021A51619500B60823 /* SHNPictureManagerCtrller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNPictureManagerCtrller.h; sourceTree = "<group>"; };
+		B0D907031A51619500B60823 /* SHNPictureManagerCtrller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNPictureManagerCtrller.m; sourceTree = "<group>"; };
+		B0DD273E1A318D02005C5845 /* TestButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestButton.h; sourceTree = "<group>"; };
+		B0DD273F1A318D02005C5845 /* TestButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestButton.m; sourceTree = "<group>"; };
+		B0DD27411A318F0A005C5845 /* TestButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestButtonViewController.h; sourceTree = "<group>"; };
+		B0DD27421A318F0A005C5845 /* TestButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestButtonViewController.m; sourceTree = "<group>"; };
 		B0FA090719E675A800C2E62A /* country.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = country.xcdatamodel; sourceTree = "<group>"; };
 		B0FA090919E675D200C2E62A /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
 		B0FA090A19E675D200C2E62A /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
@@ -137,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05BEE881A03688C007E0884 /* CoreMedia.framework in Frameworks */,
 				B0D4EC231A022F700067ECB2 /* AVFoundation.framework in Frameworks */,
 				B08CAD6519ED221E007037EA /* librabbitmq.a in Frameworks */,
 				B09DFAA21987A2AB004174CE /* MediaToolbox.framework in Frameworks */,
@@ -187,6 +209,7 @@
 		B00EB13218D6DC9F00303DF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B05BEE871A03688C007E0884 /* CoreMedia.framework */,
 				B0D4EC221A022F700067ECB2 /* AVFoundation.framework */,
 				B09DFAA11987A2AB004174CE /* MediaToolbox.framework */,
 				B09DFA9F1987A2A5004174CE /* MediaPlayer.framework */,
@@ -226,6 +249,8 @@
 				B07154B319E63CAE00D12648 /* CoreDataTestViewController.m */,
 				B08CAD6619ED297A007037EA /* RabbitMQViewController.h */,
 				B08CAD6719ED297A007037EA /* RabbitMQViewController.m */,
+				B0DD27411A318F0A005C5845 /* TestButtonViewController.h */,
+				B0DD27421A318F0A005C5845 /* TestButtonViewController.m */,
 				B00EB14518D6DC9F00303DF2 /* Main.storyboard */,
 				B00EB14B18D6DC9F00303DF2 /* Images.xcassets */,
 				B00EB13A18D6DC9F00303DF2 /* Supporting Files */,
@@ -262,13 +287,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B01283171A36F86E00741E0C /* TestViewControllerTransition */ = {
+			isa = PBXGroup;
+			children = (
+				B01283181A36F8AB00741E0C /* TestViewControllerTransition.h */,
+				B01283191A36F8AB00741E0C /* TestViewControllerTransition.m */,
+			);
+			path = TestViewControllerTransition;
+			sourceTree = "<group>";
+		};
+		B02153B71A1CA8B0004465A7 /* GWHttpMethods */ = {
+			isa = PBXGroup;
+			children = (
+				B02153B81A1CA8B0004465A7 /* GWHttpMethods.h */,
+				B02153B91A1CA8B0004465A7 /* GWHttpMethods.m */,
+			);
+			path = GWHttpMethods;
+			sourceTree = "<group>";
+		};
 		B02218FB1938200D00305E3A /* ExtendLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B0D906FF1A51619500B60823 /* AlbumViewController */,
+				B01283171A36F86E00741E0C /* TestViewControllerTransition */,
+				B0DD273D1A318CE4005C5845 /* TestButton */,
+				B02153B71A1CA8B0004465A7 /* GWHttpMethods */,
 				B08CAD5F19ED221E007037EA /* rabbitmq-lib */,
 				B0FA090519E6759E00C2E62A /* CoreDataTest */,
 				B06D6AD11999B6A80037DF27 /* MaterialButton */,
 				B09DFAA91987B04B004174CE /* testMpmovie.mp4 */,
+				B03B2AA51A30652B007CCCF7 /* nvr.mp4 */,
 				B0428B22195BC2D4007FA624 /* AppNotificationMessage */,
 				B0221900193820B800305E3A /* MultiSplitCollectionView */,
 			);
@@ -322,6 +370,26 @@
 				B08CAD6419ED221E007037EA /* socket.h */,
 			);
 			path = "rabbitmq-lib";
+			sourceTree = "<group>";
+		};
+		B0D906FF1A51619500B60823 /* AlbumViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B0D907001A51619500B60823 /* AlbumFullViewController.h */,
+				B0D907011A51619500B60823 /* AlbumFullViewController.m */,
+				B0D907021A51619500B60823 /* SHNPictureManagerCtrller.h */,
+				B0D907031A51619500B60823 /* SHNPictureManagerCtrller.m */,
+			);
+			path = AlbumViewController;
+			sourceTree = "<group>";
+		};
+		B0DD273D1A318CE4005C5845 /* TestButton */ = {
+			isa = PBXGroup;
+			children = (
+				B0DD273E1A318D02005C5845 /* TestButton.h */,
+				B0DD273F1A318D02005C5845 /* TestButton.m */,
+			);
+			path = TestButton;
 			sourceTree = "<group>";
 		};
 		B0FA090519E6759E00C2E62A /* CoreDataTest */ = {
@@ -480,7 +548,10 @@
 				B0C43C9C1919CA1900F2A670 /* PageInitViewController.m in Sources */,
 				B0858DCF19B6C61F000C23B4 /* OrientationViewController.m in Sources */,
 				B0221906193820DD00305E3A /* MultiSplitCollectionViewCell.m in Sources */,
+				B012831A1A36F8AB00741E0C /* TestViewControllerTransition.m in Sources */,
+				B02153BA1A1CA8B0004465A7 /* GWHttpMethods.m in Sources */,
 				B0221903193820C500305E3A /* MultiSplitCollectionView.m in Sources */,
+				B0D907041A51619500B60823 /* AlbumFullViewController.m in Sources */,
 				B0858DE519B6CAA7000C23B4 /* FourSplitFlowLayout.m in Sources */,
 				B00EB14A18D6DC9F00303DF2 /* MainViewController.m in Sources */,
 				B0858DE819B6CC2C000C23B4 /* OneSplitFlowLayout.m in Sources */,
@@ -489,6 +560,9 @@
 				B096F12E191B626600218D8D /* FacebookPopViewController.m in Sources */,
 				B08CAD6819ED297A007037EA /* RabbitMQViewController.m in Sources */,
 				B00EB14418D6DC9F00303DF2 /* MainAppDelegate.m in Sources */,
+				B0D907051A51619500B60823 /* SHNPictureManagerCtrller.m in Sources */,
+				B0DD27401A318D02005C5845 /* TestButton.m in Sources */,
+				B0DD27431A318F0A005C5845 /* TestButtonViewController.m in Sources */,
 				B0858DEC19B70D84000C23B4 /* NineSplitFlowLayout.m in Sources */,
 				B0C43CA51919E35200F2A670 /* PageContentViewController.m in Sources */,
 				B06D6AD41999B6C40037DF27 /* MaterialButton.m in Sources */,

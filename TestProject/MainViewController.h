@@ -14,7 +14,9 @@
 #import "AppNotificationMessage.h"
 #import "MaterialButton.h"
 
-@interface MainViewController : UIViewController <UIGestureRecognizerDelegate>
+#import "TestViewControllerTransition.h"
+
+@interface MainViewController : UIViewController <UIGestureRecognizerDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIProgressView *progressViewTest;
 - (IBAction)tableviewAutoLayout:(id)sender;
@@ -26,7 +28,11 @@
 - (IBAction)caKeyFrameAnimation:(id)sender;
 - (IBAction)appNotificationAnimation:(id)sender;
 - (IBAction)mpMoviePlayer:(id)sender;
+- (IBAction)testButtonAction:(id)sender;
 
 @property (strong, nonatomic) AppNotificationMessage *appnotificationTest;
 
+@property (strong, nonatomic) TestViewControllerTransition *pushAnimation;
+@property (strong, nonatomic) UIPercentDrivenInteractiveTransition *interactionController;
+//@property (weak, nonatomic) IBOutlet UINavigationController *navigationController;
 @end
