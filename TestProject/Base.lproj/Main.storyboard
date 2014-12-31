@@ -165,6 +165,24 @@
             </objects>
             <point key="canvasLocation" x="1111" y="-170"/>
         </scene>
+        <!--Test Album View Controller-->
+        <scene sceneID="oV3-i1-sgR">
+            <objects>
+                <viewController id="dZw-Vg-3J7" customClass="TestAlbumViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2fJ-0d-Imq"/>
+                        <viewControllerLayoutGuide type="bottom" id="DmQ-va-Jae"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hRQ-gc-T6s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.8706265688" green="0.36092495920000001" blue="0.37758973239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZL-U0-1zq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1570" y="-170"/>
+        </scene>
         <!--Table View Auto Layout Table View Controller-->
         <scene sceneID="vMz-X0-Lxw">
             <objects>
@@ -546,6 +564,15 @@
                                 </state>
                                 <connections>
                                     <action selector="testButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fQW-gt-eg2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpC-1c-iOm">
+                                <rect key="frame" x="190" y="244" width="110" height="30"/>
+                                <state key="normal" title="TestAlbum">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dZw-Vg-3J7" kind="modal" id="kUs-Jc-J8Z"/>
                                 </connections>
                             </button>
                         </subviews>

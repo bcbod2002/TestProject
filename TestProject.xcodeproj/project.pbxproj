@@ -43,13 +43,15 @@
 		B09DFAA81987AE1C004174CE /* TestMpMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B09DFAA71987AE1C004174CE /* TestMpMoviePlayerViewController.m */; };
 		B09DFAAA1987B04B004174CE /* testMpmovie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B09DFAA91987B04B004174CE /* testMpmovie.mp4 */; };
 		B0B2094A18DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B2094918DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m */; };
+		B0BBB48D1A5280FA00F84D04 /* AlbumFullCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BBB48C1A5280FA00F84D04 /* AlbumFullCollectionView.m */; };
+		B0BBB4901A52846900F84D04 /* AlbumFullFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BBB48F1A52846900F84D04 /* AlbumFullFlowLayout.m */; };
+		B0BBB4931A5293CF00F84D04 /* AlbumFullCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BBB4921A5293CF00F84D04 /* AlbumFullCollectionViewCell.m */; };
+		B0BBB4961A52A90100F84D04 /* TestAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BBB4951A52A90100F84D04 /* TestAlbumViewController.m */; };
 		B0C43C9C1919CA1900F2A670 /* PageInitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C43C9B1919CA1900F2A670 /* PageInitViewController.m */; };
 		B0C43CA51919E35200F2A670 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C43CA41919E35200F2A670 /* PageContentViewController.m */; };
 		B0D4EC211A022E1E0067ECB2 /* TestAVFoudationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D4EC201A022E1E0067ECB2 /* TestAVFoudationViewController.m */; };
 		B0D4EC231A022F700067ECB2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D4EC221A022F700067ECB2 /* AVFoundation.framework */; };
 		B0D7B69B18DA770B0095C471 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D7B69A18DA770B0095C471 /* CoreData.framework */; };
-		B0D907041A51619500B60823 /* AlbumFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D907011A51619500B60823 /* AlbumFullViewController.m */; };
-		B0D907051A51619500B60823 /* SHNPictureManagerCtrller.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D907031A51619500B60823 /* SHNPictureManagerCtrller.m */; };
 		B0DD27401A318D02005C5845 /* TestButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DD273F1A318D02005C5845 /* TestButton.m */; };
 		B0DD27431A318F0A005C5845 /* TestButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DD27421A318F0A005C5845 /* TestButtonViewController.m */; };
 		B0FA090819E675A800C2E62A /* country.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0FA090619E675A800C2E62A /* country.xcdatamodeld */; };
@@ -131,6 +133,14 @@
 		B09DFAA91987B04B004174CE /* testMpmovie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = testMpmovie.mp4; path = TestProject/testMpmovie.mp4; sourceTree = SOURCE_ROOT; };
 		B0B2094818DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAutoLayoutTableViewController.h; sourceTree = "<group>"; };
 		B0B2094918DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewAutoLayoutTableViewController.m; sourceTree = "<group>"; };
+		B0BBB48B1A5280FA00F84D04 /* AlbumFullCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlbumFullCollectionView.h; path = ExtendLibrary/AlbumViewController/AlbumFullCollectionView.h; sourceTree = SOURCE_ROOT; };
+		B0BBB48C1A5280FA00F84D04 /* AlbumFullCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlbumFullCollectionView.m; path = ExtendLibrary/AlbumViewController/AlbumFullCollectionView.m; sourceTree = SOURCE_ROOT; };
+		B0BBB48E1A52846900F84D04 /* AlbumFullFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumFullFlowLayout.h; sourceTree = "<group>"; };
+		B0BBB48F1A52846900F84D04 /* AlbumFullFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumFullFlowLayout.m; sourceTree = "<group>"; };
+		B0BBB4911A5293CF00F84D04 /* AlbumFullCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumFullCollectionViewCell.h; sourceTree = "<group>"; };
+		B0BBB4921A5293CF00F84D04 /* AlbumFullCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumFullCollectionViewCell.m; sourceTree = "<group>"; };
+		B0BBB4941A52A90100F84D04 /* TestAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAlbumViewController.h; sourceTree = "<group>"; };
+		B0BBB4951A52A90100F84D04 /* TestAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAlbumViewController.m; sourceTree = "<group>"; };
 		B0C43C9A1919CA1900F2A670 /* PageInitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageInitViewController.h; sourceTree = "<group>"; };
 		B0C43C9B1919CA1900F2A670 /* PageInitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageInitViewController.m; sourceTree = "<group>"; };
 		B0C43CA31919E35200F2A670 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
@@ -139,10 +149,6 @@
 		B0D4EC201A022E1E0067ECB2 /* TestAVFoudationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAVFoudationViewController.m; sourceTree = "<group>"; };
 		B0D4EC221A022F700067ECB2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B0D7B69A18DA770B0095C471 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		B0D907001A51619500B60823 /* AlbumFullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumFullViewController.h; sourceTree = "<group>"; };
-		B0D907011A51619500B60823 /* AlbumFullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumFullViewController.m; sourceTree = "<group>"; };
-		B0D907021A51619500B60823 /* SHNPictureManagerCtrller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNPictureManagerCtrller.h; sourceTree = "<group>"; };
-		B0D907031A51619500B60823 /* SHNPictureManagerCtrller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNPictureManagerCtrller.m; sourceTree = "<group>"; };
 		B0DD273E1A318D02005C5845 /* TestButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestButton.h; sourceTree = "<group>"; };
 		B0DD273F1A318D02005C5845 /* TestButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestButton.m; sourceTree = "<group>"; };
 		B0DD27411A318F0A005C5845 /* TestButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestButtonViewController.h; sourceTree = "<group>"; };
@@ -251,6 +257,8 @@
 				B08CAD6719ED297A007037EA /* RabbitMQViewController.m */,
 				B0DD27411A318F0A005C5845 /* TestButtonViewController.h */,
 				B0DD27421A318F0A005C5845 /* TestButtonViewController.m */,
+				B0BBB4941A52A90100F84D04 /* TestAlbumViewController.h */,
+				B0BBB4951A52A90100F84D04 /* TestAlbumViewController.m */,
 				B00EB14518D6DC9F00303DF2 /* Main.storyboard */,
 				B00EB14B18D6DC9F00303DF2 /* Images.xcassets */,
 				B00EB13A18D6DC9F00303DF2 /* Supporting Files */,
@@ -375,10 +383,12 @@
 		B0D906FF1A51619500B60823 /* AlbumViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B0D907001A51619500B60823 /* AlbumFullViewController.h */,
-				B0D907011A51619500B60823 /* AlbumFullViewController.m */,
-				B0D907021A51619500B60823 /* SHNPictureManagerCtrller.h */,
-				B0D907031A51619500B60823 /* SHNPictureManagerCtrller.m */,
+				B0BBB48B1A5280FA00F84D04 /* AlbumFullCollectionView.h */,
+				B0BBB48C1A5280FA00F84D04 /* AlbumFullCollectionView.m */,
+				B0BBB48E1A52846900F84D04 /* AlbumFullFlowLayout.h */,
+				B0BBB48F1A52846900F84D04 /* AlbumFullFlowLayout.m */,
+				B0BBB4911A5293CF00F84D04 /* AlbumFullCollectionViewCell.h */,
+				B0BBB4921A5293CF00F84D04 /* AlbumFullCollectionViewCell.m */,
 			);
 			path = AlbumViewController;
 			sourceTree = "<group>";
@@ -548,10 +558,11 @@
 				B0C43C9C1919CA1900F2A670 /* PageInitViewController.m in Sources */,
 				B0858DCF19B6C61F000C23B4 /* OrientationViewController.m in Sources */,
 				B0221906193820DD00305E3A /* MultiSplitCollectionViewCell.m in Sources */,
+				B0BBB4931A5293CF00F84D04 /* AlbumFullCollectionViewCell.m in Sources */,
 				B012831A1A36F8AB00741E0C /* TestViewControllerTransition.m in Sources */,
 				B02153BA1A1CA8B0004465A7 /* GWHttpMethods.m in Sources */,
+				B0BBB4961A52A90100F84D04 /* TestAlbumViewController.m in Sources */,
 				B0221903193820C500305E3A /* MultiSplitCollectionView.m in Sources */,
-				B0D907041A51619500B60823 /* AlbumFullViewController.m in Sources */,
 				B0858DE519B6CAA7000C23B4 /* FourSplitFlowLayout.m in Sources */,
 				B00EB14A18D6DC9F00303DF2 /* MainViewController.m in Sources */,
 				B0858DE819B6CC2C000C23B4 /* OneSplitFlowLayout.m in Sources */,
@@ -560,11 +571,12 @@
 				B096F12E191B626600218D8D /* FacebookPopViewController.m in Sources */,
 				B08CAD6819ED297A007037EA /* RabbitMQViewController.m in Sources */,
 				B00EB14418D6DC9F00303DF2 /* MainAppDelegate.m in Sources */,
-				B0D907051A51619500B60823 /* SHNPictureManagerCtrller.m in Sources */,
 				B0DD27401A318D02005C5845 /* TestButton.m in Sources */,
 				B0DD27431A318F0A005C5845 /* TestButtonViewController.m in Sources */,
 				B0858DEC19B70D84000C23B4 /* NineSplitFlowLayout.m in Sources */,
 				B0C43CA51919E35200F2A670 /* PageContentViewController.m in Sources */,
+				B0BBB4901A52846900F84D04 /* AlbumFullFlowLayout.m in Sources */,
+				B0BBB48D1A5280FA00F84D04 /* AlbumFullCollectionView.m in Sources */,
 				B06D6AD41999B6C40037DF27 /* MaterialButton.m in Sources */,
 				B09DFAA81987AE1C004174CE /* TestMpMoviePlayerViewController.m in Sources */,
 			);
