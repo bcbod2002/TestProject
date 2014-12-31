@@ -10,4 +10,6 @@
 
 @interface AlbumFullFlowLayout : UICollectionViewFlowLayout
 
+-(instancetype)initWithCollectionViewSize:(CGSize)collectionViewSize;
+
 @end

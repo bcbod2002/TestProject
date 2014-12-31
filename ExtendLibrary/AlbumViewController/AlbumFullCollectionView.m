@@ -25,10 +25,12 @@
         _deleteTag = NO;
         deleteItemArray = [[NSMutableArray alloc] init];
         albumReuse = @"AlbumFullReuse";
-        AlbumFullFlowLayout *albumFullFlowLayout = [[AlbumFullFlowLayout alloc] init];
+        AlbumFullFlowLayout *albumFullFlowLayout = [[AlbumFullFlowLayout alloc] initWithCollectionViewSize:frame.size];
         albumFullCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height) collectionViewLayout:albumFullFlowLayout];
         [albumFullCollectionView registerClass:[AlbumFullCollectionViewCell class] forCellWithReuseIdentifier:albumReuse];
         [albumFullCollectionView setScrollEnabled:YES];
+        [albumFullCollectionView setShowsHorizontalScrollIndicator:NO];
+        [albumFullCollectionView setShowsVerticalScrollIndicator:NO];
         albumFullCollectionView.delegate = self;
         albumFullCollectionView.dataSource = self;
         [self addSubview:albumFullCollectionView];
@@ -51,7 +53,8 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     AlbumFullCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:albumReuse forIndexPath:indexPath];
-    [cell setFrame:CGRectMake(cell.frame.origin.x, cell.frame.origin.y, self.frame.size.width, self.frame.size.height)];
+//    [cell setFrame:CGRectMake(cell.frame.origin.x, cell.frame.origin.y, self.frame.size.width, self.frame.size.height)];
+//    [cell setFrame:CGRectMake(cell.frame.origin.x, 0, self.frame.size.width, self.frame.size.height)];
     [cell setFullScrollViewDelegate:self];
     [cell setCellImage:albumImagesArray[indexPath.row]];
     NSLog(@"RRRRR");
