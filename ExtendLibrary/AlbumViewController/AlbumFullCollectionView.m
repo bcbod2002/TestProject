@@ -57,7 +57,6 @@
 //    [cell setFrame:CGRectMake(cell.frame.origin.x, 0, self.frame.size.width, self.frame.size.height)];
     [cell setFullScrollViewDelegate:self];
     [cell setCellImage:albumImagesArray[indexPath.row]];
-    NSLog(@"RRRRR");
     return cell;
 }
 
