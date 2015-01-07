@@ -48,7 +48,6 @@
     NSLog(@"urlString = %@", urlString);
     dispatch_async(dispatch_get_main_queue(), ^{
         NSURL *httpGetURL = [NSURL URLWithString:urlString];
-//        NSURL *httpGetURL = [NSURL URLWithString:@"http://video17.lax01.hls.twitch.tv/hls83/tsm_bjergsen_11770608176_163824162/chunked/py-index-live.m3u8?token=id=7499097341988482573,bid=11770608176,exp=1415957831,node=video17-1.lax01.hls.justin.tv,nname=video17.lax01,fmt=chunked&sig=7d69126f85bd39c8aab0313d30d3e6b6433f2e69"];
         NSMutableURLRequest *httpURLRequest = [[NSMutableURLRequest alloc] initWithURL:httpGetURL cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:20.0];
         [httpURLRequest setHTTPMethod:@"GET"];
         NSURLConnection *httpURLConnection = [[NSURLConnection alloc] initWithRequest:httpURLRequest delegate:self startImmediately:YES];
@@ -79,7 +78,18 @@
 #pragma mark - NSURLConnectionDataDelegate
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
-    NSLog(@"Error = %@", [error localizedDescription]);
+    switch ([error code])
+    {
+        case NSURLErrorTimedOut:
+            NSLog(@"NetWork Time out");
+            break;
+        case kCFURLErrorNotConnectedToInternet:
+            NSLog(@"It's not connect to Internet");
+            break;
+
+        default:
+            break;
+    }
 //    [_delegate connFailed:self WithError:error];
 }
 
