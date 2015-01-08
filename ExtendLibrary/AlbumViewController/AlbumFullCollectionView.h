@@ -10,7 +10,7 @@
 #import "AlbumFullCollectionViewCell.h"
 #import "AlbumFullFlowLayout.h"
 
-@interface AlbumFullCollectionView : UIView <UICollectionViewDataSource, UICollectionViewDelegate, UIScrollViewDelegate>
+@interface AlbumFullCollectionView : UIView <UICollectionViewDataSource, UICollectionViewDelegate>
 
 #pragma mark - Variables
 @property (nonatomic) BOOL deleteTag;
@@ -18,5 +18,7 @@
 #pragma mark - Functions
 -(void)setAlbumImagesContentArray:(NSArray *)imagesArray;
 -(void)setAlbumImageFilePathArray:(NSArray *)filePathArray;
+-(void)deleteAlbumItemFromCurrentPage;
+-(void)deleteAlbumItemWithPage:(NSInteger)pageNumber;
 
 @end

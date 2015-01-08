@@ -8,9 +8,6 @@
 
 #import "AlbumFullFlowLayout.h"
 
-#define ACTIVE_DISTANCE 200 //200
-#define ZOOM_FACTOR 0.3
-#define ITEM_SIZE 200.0
 @implementation AlbumFullFlowLayout
 {
     CGSize collectionViewSize;
@@ -23,7 +20,6 @@
     {
         collectionViewSize = _collectionViewSize;
         self.itemSize = CGSizeMake(collectionViewSize.width, collectionViewSize.height);
-//        self.itemSize = CGSizeMake(320, 240);
     }
     
     return self;
@@ -49,7 +45,7 @@
     for (UICollectionViewLayoutAttributes *attribute in attributesArray)
     {
         CGFloat distance = CGRectGetMidX(visibleRect) - attribute.center.x;
-        if (ABS(distance) > 0.503106)
+        if (ABS(distance) > 0)
         {
             CGFloat zoomOut = 1 - 0.6 * (ABS(distance) / 322);
             attribute.transform3D = CATransform3DMakeScale(zoomOut, zoomOut, 1.f);

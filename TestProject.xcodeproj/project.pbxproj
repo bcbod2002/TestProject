@@ -30,6 +30,9 @@
 		B05BEE881A03688C007E0884 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05BEE871A03688C007E0884 /* CoreMedia.framework */; };
 		B06D6AD41999B6C40037DF27 /* MaterialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B06D6AD31999B6C40037DF27 /* MaterialButton.m */; };
 		B07154B419E63CAE00D12648 /* CoreDataTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07154B319E63CAE00D12648 /* CoreDataTestViewController.m */; };
+		B084CF8D1A5E928100CAB2BB /* AlbumNormalCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B084CF8C1A5E928100CAB2BB /* AlbumNormalCollectionView.m */; };
+		B084CF901A5E92A300CAB2BB /* AlbumNormalFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B084CF8F1A5E92A300CAB2BB /* AlbumNormalFlowLayout.m */; };
+		B084CF931A5E92C100CAB2BB /* AlbumNormalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B084CF921A5E92C100CAB2BB /* AlbumNormalCollectionViewCell.m */; };
 		B0858DCF19B6C61F000C23B4 /* OrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DCE19B6C61F000C23B4 /* OrientationViewController.m */; };
 		B0858DE519B6CAA7000C23B4 /* FourSplitFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DE419B6CAA7000C23B4 /* FourSplitFlowLayout.m */; };
 		B0858DE819B6CC2C000C23B4 /* OneSplitFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DE719B6CC2C000C23B4 /* OneSplitFlowLayout.m */; };
@@ -107,6 +110,12 @@
 		B06D6AD31999B6C40037DF27 /* MaterialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialButton.m; sourceTree = "<group>"; };
 		B07154B219E63CAE00D12648 /* CoreDataTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTestViewController.h; sourceTree = "<group>"; };
 		B07154B319E63CAE00D12648 /* CoreDataTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestViewController.m; sourceTree = "<group>"; };
+		B084CF8B1A5E928100CAB2BB /* AlbumNormalCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumNormalCollectionView.h; sourceTree = "<group>"; };
+		B084CF8C1A5E928100CAB2BB /* AlbumNormalCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumNormalCollectionView.m; sourceTree = "<group>"; };
+		B084CF8E1A5E92A300CAB2BB /* AlbumNormalFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumNormalFlowLayout.h; sourceTree = "<group>"; };
+		B084CF8F1A5E92A300CAB2BB /* AlbumNormalFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumNormalFlowLayout.m; sourceTree = "<group>"; };
+		B084CF911A5E92C100CAB2BB /* AlbumNormalCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumNormalCollectionViewCell.h; sourceTree = "<group>"; };
+		B084CF921A5E92C100CAB2BB /* AlbumNormalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumNormalCollectionViewCell.m; sourceTree = "<group>"; };
 		B0858DCD19B6C61F000C23B4 /* OrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrientationViewController.h; sourceTree = "<group>"; };
 		B0858DCE19B6C61F000C23B4 /* OrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrientationViewController.m; sourceTree = "<group>"; };
 		B0858DE319B6CAA7000C23B4 /* FourSplitFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourSplitFlowLayout.h; sourceTree = "<group>"; };
@@ -368,6 +377,32 @@
 			path = MaterialButton;
 			sourceTree = "<group>";
 		};
+		B084CF891A5E7ACA00CAB2BB /* AlbumFullCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B0BBB48B1A5280FA00F84D04 /* AlbumFullCollectionView.h */,
+				B0BBB48C1A5280FA00F84D04 /* AlbumFullCollectionView.m */,
+				B0BBB48E1A52846900F84D04 /* AlbumFullFlowLayout.h */,
+				B0BBB48F1A52846900F84D04 /* AlbumFullFlowLayout.m */,
+				B0BBB4911A5293CF00F84D04 /* AlbumFullCollectionViewCell.h */,
+				B0BBB4921A5293CF00F84D04 /* AlbumFullCollectionViewCell.m */,
+			);
+			name = AlbumFullCollectionView;
+			sourceTree = "<group>";
+		};
+		B084CF8A1A5E926B00CAB2BB /* AlbumNormalCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B084CF8B1A5E928100CAB2BB /* AlbumNormalCollectionView.h */,
+				B084CF8C1A5E928100CAB2BB /* AlbumNormalCollectionView.m */,
+				B084CF8E1A5E92A300CAB2BB /* AlbumNormalFlowLayout.h */,
+				B084CF8F1A5E92A300CAB2BB /* AlbumNormalFlowLayout.m */,
+				B084CF911A5E92C100CAB2BB /* AlbumNormalCollectionViewCell.h */,
+				B084CF921A5E92C100CAB2BB /* AlbumNormalCollectionViewCell.m */,
+			);
+			path = AlbumNormalCollectionView;
+			sourceTree = "<group>";
+		};
 		B08CAD5F19ED221E007037EA /* rabbitmq-lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,12 +418,8 @@
 		B0D906FF1A51619500B60823 /* AlbumViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B0BBB48B1A5280FA00F84D04 /* AlbumFullCollectionView.h */,
-				B0BBB48C1A5280FA00F84D04 /* AlbumFullCollectionView.m */,
-				B0BBB48E1A52846900F84D04 /* AlbumFullFlowLayout.h */,
-				B0BBB48F1A52846900F84D04 /* AlbumFullFlowLayout.m */,
-				B0BBB4911A5293CF00F84D04 /* AlbumFullCollectionViewCell.h */,
-				B0BBB4921A5293CF00F84D04 /* AlbumFullCollectionViewCell.m */,
+				B084CF8A1A5E926B00CAB2BB /* AlbumNormalCollectionView */,
+				B084CF891A5E7ACA00CAB2BB /* AlbumFullCollectionView */,
 			);
 			path = AlbumViewController;
 			sourceTree = "<group>";
@@ -551,11 +582,13 @@
 			files = (
 				B0B2094A18DC2C3A00201CBD /* TableViewAutoLayoutTableViewController.m in Sources */,
 				B07154B419E63CAE00D12648 /* CoreDataTestViewController.m in Sources */,
+				B084CF901A5E92A300CAB2BB /* AlbumNormalFlowLayout.m in Sources */,
 				B0858DF219B70EF6000C23B4 /* SixteenSplitFlowLayout.m in Sources */,
 				B00EB14018D6DC9F00303DF2 /* main.m in Sources */,
 				B0FA090B19E675D200C2E62A /* Country.m in Sources */,
 				B0FA090819E675A800C2E62A /* country.xcdatamodeld in Sources */,
 				B0C43C9C1919CA1900F2A670 /* PageInitViewController.m in Sources */,
+				B084CF8D1A5E928100CAB2BB /* AlbumNormalCollectionView.m in Sources */,
 				B0858DCF19B6C61F000C23B4 /* OrientationViewController.m in Sources */,
 				B0221906193820DD00305E3A /* MultiSplitCollectionViewCell.m in Sources */,
 				B0BBB4931A5293CF00F84D04 /* AlbumFullCollectionViewCell.m in Sources */,
@@ -564,6 +597,7 @@
 				B0BBB4961A52A90100F84D04 /* TestAlbumViewController.m in Sources */,
 				B0221903193820C500305E3A /* MultiSplitCollectionView.m in Sources */,
 				B0858DE519B6CAA7000C23B4 /* FourSplitFlowLayout.m in Sources */,
+				B084CF931A5E92C100CAB2BB /* AlbumNormalCollectionViewCell.m in Sources */,
 				B00EB14A18D6DC9F00303DF2 /* MainViewController.m in Sources */,
 				B0858DE819B6CC2C000C23B4 /* OneSplitFlowLayout.m in Sources */,
 				B0D4EC211A022E1E0067ECB2 /* TestAVFoudationViewController.m in Sources */,

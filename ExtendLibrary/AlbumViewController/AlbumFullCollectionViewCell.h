@@ -15,5 +15,5 @@
 #pragma mark - Functions
 -(void)setCellImage:(UIImage *)cellImage;
 -(void)setFullScrollViewDelegate:(id)object;
-
+-(void)setFullScrollViewZoomOrigin;
 @end

@@ -15,6 +15,7 @@
     NSArray *albumImagesArray;
     NSArray *albumFilePathArray;
     NSMutableArray *deleteItemArray;
+    NSInteger currentPage;
 }
 
 -(instancetype)initWithFrame:(CGRect)frame
@@ -48,33 +49,38 @@
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return 10;
+//    return albumFilePathArray.count;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     AlbumFullCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:albumReuse forIndexPath:indexPath];
-//    [cell setFrame:CGRectMake(cell.frame.origin.x, cell.frame.origin.y, self.frame.size.width, self.frame.size.height)];
-//    [cell setFrame:CGRectMake(cell.frame.origin.x, 0, self.frame.size.width, self.frame.size.height)];
     [cell setFullScrollViewDelegate:self];
     [cell setCellImage:albumImagesArray[indexPath.row]];
+    currentPage = indexPath.row;
     return cell;
 }
 
 #pragma mark - UICollectionView Delegate
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+-(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (_deleteTag)
-    {
-        [deleteItemArray addObject:albumFilePathArray[indexPath.row]];
-    }
+    return NO;
+}
+//-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if (_deleteTag)
+//    {
+//        [deleteItemArray addObject:albumFilePathArray[indexPath.row]];
+//    }
+//}
+
+-(void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    AlbumFullCollectionViewCell *albumCell = (AlbumFullCollectionViewCell *)cell;
+    [albumCell setFullScrollViewZoomOrigin];
 }
 
-#pragma mark - UIScrollView Delegate
--(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
-{
-    NSLog(@"LLLLLLL");
-    return nil;
-}
+
 
 #pragma mark - UICollectionView Other Operations
 -(void)setAlbumImagesContentArray:(NSArray *)imagesArray
@@ -88,6 +94,25 @@
     albumFilePathArray = filePathArray;
 }
 
+-(void)deleteAlbumItemFromCurrentPage
+{
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:currentPage inSection:1];
+    [albumFullCollectionView deleteItemsAtIndexPaths:@[indexPath]];
+    [deleteItemArray removeObjectAtIndex:currentPage];
+    
+}
+
+-(void)deleteAlbumItemWithPage:(NSInteger)pageNumber
+{
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:pageNumber inSection:1];
+    [albumFullCollectionView deleteItemsAtIndexPaths:@[indexPath]];
+    [deleteItemArray removeObjectAtIndex:pageNumber];
+}
+
+-(void)dealloc
+{
+    
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.
