@@ -72,6 +72,7 @@
 #pragma mark - UIScrollView Delegate
 -(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
+    NSLog(@"LLLLLLL");
     return nil;
 }
 

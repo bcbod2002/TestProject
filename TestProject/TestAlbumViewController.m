@@ -18,7 +18,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    AlbumFullCollectionView *testAlbumView = [[AlbumFullCollectionView alloc] initWithFrame:CGRectMake(0, 200, 320, 240)];
+    CGRect screenRect = [UIScreen mainScreen].bounds;
+//    AlbumFullCollectionView *testAlbumView = [[AlbumFullCollectionView alloc] initWithFrame:CGRectMake(0, 0, screenRect.size.width, screenRect.size.height)];
+    AlbumFullCollectionView *testAlbumView = [[AlbumFullCollectionView alloc] initWithFrame:CGRectMake(0, screenRect.size.height / 2 - 120, screenRect.size.width, 240)];
     [self.view addSubview:testAlbumView];
 }
 

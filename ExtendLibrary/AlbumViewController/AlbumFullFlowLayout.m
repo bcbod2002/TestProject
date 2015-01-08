@@ -23,6 +23,7 @@
     {
         collectionViewSize = _collectionViewSize;
         self.itemSize = CGSizeMake(collectionViewSize.width, collectionViewSize.height);
+//        self.itemSize = CGSizeMake(320, 240);
     }
     
     return self;
@@ -54,7 +55,6 @@
             attribute.transform3D = CATransform3DMakeScale(zoomOut, zoomOut, 1.f);
             attribute.zIndex = 1.f;
         }
-        attribute.alpha = 0.4;
     }
     return attributesArray;
 }
