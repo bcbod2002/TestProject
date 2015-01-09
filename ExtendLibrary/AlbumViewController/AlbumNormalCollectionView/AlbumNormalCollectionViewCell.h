@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface AlbumNormalCollectionViewCell : UICollectionViewCell
+#pragma mark - Variables
+
+#pragma mark - Functions
+-(void)setCellImage:(UIImage *)cellImage;
 
 @end

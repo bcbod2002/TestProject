@@ -10,4 +10,8 @@
 
 @interface AlbumNormalFlowLayout : UICollectionViewFlowLayout
 
+#pragma mark - Variables
+
+#pragma mark - Functions
+-(instancetype)initWithWidthCellNumber:(NSInteger)widthNumber WithLineSpacing:(CGFloat)lineSpacing AndCollectionViewSize:(CGSize)_collectionViewSize;
 @end

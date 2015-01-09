@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AlbumFullCollectionView.h"
+#import "AlbumNormalCollectionView.h"
 
 @interface TestAlbumViewController : UIViewController
 

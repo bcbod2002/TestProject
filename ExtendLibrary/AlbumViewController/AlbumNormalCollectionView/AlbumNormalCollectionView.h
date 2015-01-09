@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AlbumNormalFlowLayout.h"
+#import "AlbumNormalCollectionViewCell.h"
 
-@interface AlbumNormalCollectionView : UIView
+@interface AlbumNormalCollectionView : UIView <UICollectionViewDataSource, UICollectionViewDelegate>
+
+#pragma mark - Variables
+@property (nonatomic) BOOL deleteTag;
+@property (nonatomic) NSInteger widthCellNumber;
+
+#pragma mark - Functions
+-(void)setAlbumImagesContentArray:(NSArray *)imagesArray;
+-(void)setAlbumImageFilePathArray:(NSArray *)filePathArray;
 
 @end

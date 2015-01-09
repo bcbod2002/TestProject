@@ -55,7 +55,6 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     AlbumFullCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:albumReuse forIndexPath:indexPath];
-    [cell setFullScrollViewDelegate:self];
     [cell setCellImage:albumImagesArray[indexPath.row]];
     currentPage = indexPath.row;
     return cell;
@@ -109,8 +108,15 @@
     [deleteItemArray removeObjectAtIndex:pageNumber];
 }
 
+-(void)setCurrentPage:(NSInteger)pageNumber
+{
+    NSIndexPath *pageIndexPath = [NSIndexPath indexPathForRow:pageNumber inSection:1];
+    [albumFullCollectionView scrollToItemAtIndexPath:pageIndexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+}
+
 -(void)dealloc
 {
+    albumFullCollectionView = nil;
     
 }
 

@@ -10,6 +10,9 @@
 
 @interface AlbumFullFlowLayout : UICollectionViewFlowLayout
 
+#pragma mark - Variables
+
+#pragma mark - Functions
 -(instancetype)initWithCollectionViewSize:(CGSize)collectionViewSize;
 
 @end
