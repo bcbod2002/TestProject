@@ -24,12 +24,12 @@
          */
         normalImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         [normalImageView setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth];
-        [normalImageView setBackgroundColor:[UIColor blueColor]];
+//        [normalImageView setBackgroundColor:[UIColor blueColor]];
         [normalImageView setAlpha:0.8f];
         [self.layer setShouldRasterize:YES];
         [self.layer setRasterizationScale:[UIScreen mainScreen].scale];
         [self setBackgroundColor:[UIColor greenColor]];
-        [self.contentView setBackgroundColor:[UIColor redColor]];
+        [self.contentView setBackgroundColor:[UIColor yellowColor]];
         [self.contentView addSubview:normalImageView];
     }
     return self;

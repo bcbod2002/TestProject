@@ -27,6 +27,7 @@
 		B0221906193820DD00305E3A /* MultiSplitCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0221905193820DD00305E3A /* MultiSplitCollectionViewCell.m */; };
 		B022190919388D8A00305E3A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B022190819388D8A00305E3A /* QuartzCore.framework */; };
 		B0428B25195BC2EF007FA624 /* AppNotificationMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0428B24195BC2EF007FA624 /* AppNotificationMessage.m */; };
+		B049E0761A639FF50065A647 /* AlbumNormalHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B049E0751A639FF50065A647 /* AlbumNormalHeaderCollectionReusableView.m */; };
 		B05BEE881A03688C007E0884 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05BEE871A03688C007E0884 /* CoreMedia.framework */; };
 		B06D6AD41999B6C40037DF27 /* MaterialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B06D6AD31999B6C40037DF27 /* MaterialButton.m */; };
 		B07154B419E63CAE00D12648 /* CoreDataTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07154B319E63CAE00D12648 /* CoreDataTestViewController.m */; };
@@ -105,6 +106,8 @@
 		B03B2AA51A30652B007CCCF7 /* nvr.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nvr.mp4; sourceTree = "<group>"; };
 		B0428B23195BC2EF007FA624 /* AppNotificationMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNotificationMessage.h; sourceTree = "<group>"; };
 		B0428B24195BC2EF007FA624 /* AppNotificationMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNotificationMessage.m; sourceTree = "<group>"; };
+		B049E0741A639FF50065A647 /* AlbumNormalHeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumNormalHeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		B049E0751A639FF50065A647 /* AlbumNormalHeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumNormalHeaderCollectionReusableView.m; sourceTree = "<group>"; };
 		B05BEE871A03688C007E0884 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		B06D6AD21999B6C40037DF27 /* MaterialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialButton.h; sourceTree = "<group>"; };
 		B06D6AD31999B6C40037DF27 /* MaterialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialButton.m; sourceTree = "<group>"; };
@@ -399,6 +402,8 @@
 				B084CF8F1A5E92A300CAB2BB /* AlbumNormalFlowLayout.m */,
 				B084CF911A5E92C100CAB2BB /* AlbumNormalCollectionViewCell.h */,
 				B084CF921A5E92C100CAB2BB /* AlbumNormalCollectionViewCell.m */,
+				B049E0741A639FF50065A647 /* AlbumNormalHeaderCollectionReusableView.h */,
+				B049E0751A639FF50065A647 /* AlbumNormalHeaderCollectionReusableView.m */,
 			);
 			path = AlbumNormalCollectionView;
 			sourceTree = "<group>";
@@ -591,6 +596,7 @@
 				B084CF8D1A5E928100CAB2BB /* AlbumNormalCollectionView.m in Sources */,
 				B0858DCF19B6C61F000C23B4 /* OrientationViewController.m in Sources */,
 				B0221906193820DD00305E3A /* MultiSplitCollectionViewCell.m in Sources */,
+				B049E0761A639FF50065A647 /* AlbumNormalHeaderCollectionReusableView.m in Sources */,
 				B0BBB4931A5293CF00F84D04 /* AlbumFullCollectionViewCell.m in Sources */,
 				B012831A1A36F8AB00741E0C /* TestViewControllerTransition.m in Sources */,
 				B02153BA1A1CA8B0004465A7 /* GWHttpMethods.m in Sources */,

@@ -22,8 +22,20 @@
 //    AlbumFullCollectionView *testAlbumFullView = [[AlbumFullCollectionView alloc] initWithFrame:CGRectMake(0, 0, screenRect.size.width, screenRect.size.height)];
 //    [self.view addSubview:testAlbumFullView];
     
-    AlbumNormalCollectionView *testAlbumNormalView = [[AlbumNormalCollectionView alloc] initWithFrame:CGRectMake(0, 0, screenRect.size.width, screenRect.size.height)];
+    AlbumNormalCollectionView *testAlbumNormalView = [[AlbumNormalCollectionView alloc] initWithFrame:CGRectMake(0, 0, screenRect.size.width, screenRect.size.height) WithWidthCellNumber:10];
+    NSLog(@"Before Add SubView");
     [self.view addSubview:testAlbumNormalView];
+    NSLog(@"After Add Subview0");
+    NSLog(@"After Add Subview1");
+    NSLog(@"After Add Subview2");
+    NSLog(@"After Add Subview3");
+    NSLog(@"After Add Subview4");
+    NSLog(@"After Add Subview5");
+    NSLog(@"After Add Subview6");
+    NSLog(@"After Add Subview7");
+    NSLog(@"After Add Subview8");
+    NSLog(@"After Add Subview9");
+    
 }
 
 - (void)didReceiveMemoryWarning {

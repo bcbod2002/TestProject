@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AlbumNormalFlowLayout.h"
 #import "AlbumNormalCollectionViewCell.h"
+#import "AlbumNormalHeaderCollectionReusableView.h"
 
 @interface AlbumNormalCollectionView : UIView <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -17,7 +18,9 @@
 @property (nonatomic) NSInteger widthCellNumber;
 
 #pragma mark - Functions
+-(instancetype)initWithFrame:(CGRect)frame WithWidthCellNumber:(NSInteger)cellNumber;
 -(void)setAlbumImagesContentArray:(NSArray *)imagesArray;
 -(void)setAlbumImageFilePathArray:(NSArray *)filePathArray;
+-(void)setAlbumDateArray:(NSArray *)dateArray WithDateFormatter:(NSDateFormatter *)dateFormatter;
 
 @end
