@@ -32,6 +32,16 @@
 //    [self progressViewTest];
 //    [self createAppNotificationMessage];
     [self CreateMaterialButton];
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:@"1234" forKey:@"33"];
+    NSDictionary *tmpDictionary = userDefaults.dictionaryRepresentation;
+    
+    NSLog(@"tmpDictionary = %@", tmpDictionary);
+    
+    
+    NSString *tmpString = [NSString stringWithFormat:@"娃娃 = %d", 33];
+    NSLog(@"tmpString = %@", tmpString);
 }
 -(void)viewWillAppear:(BOOL)animated
 {

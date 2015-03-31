@@ -51,6 +51,7 @@
 		B0BBB4901A52846900F84D04 /* AlbumFullFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BBB48F1A52846900F84D04 /* AlbumFullFlowLayout.m */; };
 		B0BBB4931A5293CF00F84D04 /* AlbumFullCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BBB4921A5293CF00F84D04 /* AlbumFullCollectionViewCell.m */; };
 		B0BBB4961A52A90100F84D04 /* TestAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BBB4951A52A90100F84D04 /* TestAlbumViewController.m */; };
+		B0C090971AA6EA0900488B69 /* TestQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C090961AA6EA0900488B69 /* TestQRCodeViewController.m */; };
 		B0C43C9C1919CA1900F2A670 /* PageInitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C43C9B1919CA1900F2A670 /* PageInitViewController.m */; };
 		B0C43CA51919E35200F2A670 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C43CA41919E35200F2A670 /* PageContentViewController.m */; };
 		B0D4EC211A022E1E0067ECB2 /* TestAVFoudationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D4EC201A022E1E0067ECB2 /* TestAVFoudationViewController.m */; };
@@ -153,6 +154,8 @@
 		B0BBB4921A5293CF00F84D04 /* AlbumFullCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumFullCollectionViewCell.m; sourceTree = "<group>"; };
 		B0BBB4941A52A90100F84D04 /* TestAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAlbumViewController.h; sourceTree = "<group>"; };
 		B0BBB4951A52A90100F84D04 /* TestAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAlbumViewController.m; sourceTree = "<group>"; };
+		B0C090951AA6EA0900488B69 /* TestQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQRCodeViewController.h; sourceTree = "<group>"; };
+		B0C090961AA6EA0900488B69 /* TestQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestQRCodeViewController.m; sourceTree = "<group>"; };
 		B0C43C9A1919CA1900F2A670 /* PageInitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageInitViewController.h; sourceTree = "<group>"; };
 		B0C43C9B1919CA1900F2A670 /* PageInitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageInitViewController.m; sourceTree = "<group>"; };
 		B0C43CA31919E35200F2A670 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
@@ -271,6 +274,8 @@
 				B0DD27421A318F0A005C5845 /* TestButtonViewController.m */,
 				B0BBB4941A52A90100F84D04 /* TestAlbumViewController.h */,
 				B0BBB4951A52A90100F84D04 /* TestAlbumViewController.m */,
+				B0C090951AA6EA0900488B69 /* TestQRCodeViewController.h */,
+				B0C090961AA6EA0900488B69 /* TestQRCodeViewController.m */,
 				B00EB14518D6DC9F00303DF2 /* Main.storyboard */,
 				B00EB14B18D6DC9F00303DF2 /* Images.xcassets */,
 				B00EB13A18D6DC9F00303DF2 /* Supporting Files */,
@@ -596,6 +601,7 @@
 				B084CF8D1A5E928100CAB2BB /* AlbumNormalCollectionView.m in Sources */,
 				B0858DCF19B6C61F000C23B4 /* OrientationViewController.m in Sources */,
 				B0221906193820DD00305E3A /* MultiSplitCollectionViewCell.m in Sources */,
+				B0C090971AA6EA0900488B69 /* TestQRCodeViewController.m in Sources */,
 				B049E0761A639FF50065A647 /* AlbumNormalHeaderCollectionReusableView.m in Sources */,
 				B0BBB4931A5293CF00F84D04 /* AlbumFullCollectionViewCell.m in Sources */,
 				B012831A1A36F8AB00741E0C /* TestViewControllerTransition.m in Sources */,
