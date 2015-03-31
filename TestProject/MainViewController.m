@@ -32,6 +32,7 @@
 //    [self progressViewTest];
 //    [self createAppNotificationMessage];
     [self CreateMaterialButton];
+<<<<<<< HEAD
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setObject:@"1234" forKey:@"33"];
@@ -42,6 +43,10 @@
     
     NSString *tmpString = [NSString stringWithFormat:@"娃娃 = %d", 33];
     NSLog(@"tmpString = %@", tmpString);
+=======
+
+    [self objectCFunctionCallBack];
+>>>>>>> FETCH_HEAD
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -698,6 +703,34 @@
 {
     
 }
+
+#pragma mark - C Function Call Back Test
+typedef int (* CALLBACK) (int, int, int, float);
+-(void)objectCFunctionCallBack
+{
+    NSInteger cFunctionInteger = callBackTest(1, 2, 3, cCallBackFunctionTest);
+
+    NSLog(@"cFunctionInteger =========== %ld", cFunctionInteger);
+}
+
+int callBackTest(int one, int two, int three, CALLBACK callback)
+{
+    int summ = callback(one * 1, two * 2, three * 3, 3.14f);
+    return summ;
+}
+
+int cCallBackFunctionTest(int one, int two, int three, float four)
+{
+    int sum = one + two + three + four;
+    return sum;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 //-(void)viewDidUnload
 //{
 //    [super viewDidUnload];
