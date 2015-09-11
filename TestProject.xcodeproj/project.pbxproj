@@ -37,7 +37,6 @@
 		B0858DCF19B6C61F000C23B4 /* OrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DCE19B6C61F000C23B4 /* OrientationViewController.m */; };
 		B0858DE519B6CAA7000C23B4 /* FourSplitFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DE419B6CAA7000C23B4 /* FourSplitFlowLayout.m */; };
 		B0858DE819B6CC2C000C23B4 /* OneSplitFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DE719B6CC2C000C23B4 /* OneSplitFlowLayout.m */; };
-		B0858DEC19B70D84000C23B4 /* NineSplitFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DEB19B70D84000C23B4 /* NineSplitFlowLayout.m */; };
 		B0858DF219B70EF6000C23B4 /* SixteenSplitFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0858DF119B70EF6000C23B4 /* SixteenSplitFlowLayout.m */; };
 		B08CAD6519ED221E007037EA /* librabbitmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B08CAD6319ED221E007037EA /* librabbitmq.a */; };
 		B08CAD6819ED297A007037EA /* RabbitMQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08CAD6719ED297A007037EA /* RabbitMQViewController.m */; };
@@ -51,6 +50,7 @@
 		B0BBB4901A52846900F84D04 /* AlbumFullFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BBB48F1A52846900F84D04 /* AlbumFullFlowLayout.m */; };
 		B0BBB4931A5293CF00F84D04 /* AlbumFullCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BBB4921A5293CF00F84D04 /* AlbumFullCollectionViewCell.m */; };
 		B0BBB4961A52A90100F84D04 /* TestAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BBB4951A52A90100F84D04 /* TestAlbumViewController.m */; };
+		B0BEE5241BA2BE4100D4F481 /* NineSplitFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BEE5231BA2BE4100D4F481 /* NineSplitFlowLayout.m */; };
 		B0C090971AA6EA0900488B69 /* TestQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C090961AA6EA0900488B69 /* TestQRCodeViewController.m */; };
 		B0C43C9C1919CA1900F2A670 /* PageInitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C43C9B1919CA1900F2A670 /* PageInitViewController.m */; };
 		B0C43CA51919E35200F2A670 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C43CA41919E35200F2A670 /* PageContentViewController.m */; };
@@ -127,7 +127,6 @@
 		B0858DE619B6CC2C000C23B4 /* OneSplitFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneSplitFlowLayout.h; sourceTree = "<group>"; };
 		B0858DE719B6CC2C000C23B4 /* OneSplitFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneSplitFlowLayout.m; sourceTree = "<group>"; };
 		B0858DEA19B70D84000C23B4 /* NineSplitFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NineSplitFlowLayout.h; sourceTree = "<group>"; };
-		B0858DEB19B70D84000C23B4 /* NineSplitFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NineSplitFlowLayout.m; sourceTree = "<group>"; };
 		B0858DF019B70EF6000C23B4 /* SixteenSplitFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixteenSplitFlowLayout.h; sourceTree = "<group>"; };
 		B0858DF119B70EF6000C23B4 /* SixteenSplitFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixteenSplitFlowLayout.m; sourceTree = "<group>"; };
 		B08CAD6019ED221E007037EA /* amqp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amqp.h; sourceTree = "<group>"; };
@@ -154,6 +153,7 @@
 		B0BBB4921A5293CF00F84D04 /* AlbumFullCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumFullCollectionViewCell.m; sourceTree = "<group>"; };
 		B0BBB4941A52A90100F84D04 /* TestAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAlbumViewController.h; sourceTree = "<group>"; };
 		B0BBB4951A52A90100F84D04 /* TestAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAlbumViewController.m; sourceTree = "<group>"; };
+		B0BEE5231BA2BE4100D4F481 /* NineSplitFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NineSplitFlowLayout.m; sourceTree = "<group>"; };
 		B0C090951AA6EA0900488B69 /* TestQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQRCodeViewController.h; sourceTree = "<group>"; };
 		B0C090961AA6EA0900488B69 /* TestQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestQRCodeViewController.m; sourceTree = "<group>"; };
 		B0C43C9A1919CA1900F2A670 /* PageInitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageInitViewController.h; sourceTree = "<group>"; };
@@ -360,7 +360,7 @@
 				B0858DE319B6CAA7000C23B4 /* FourSplitFlowLayout.h */,
 				B0858DE419B6CAA7000C23B4 /* FourSplitFlowLayout.m */,
 				B0858DEA19B70D84000C23B4 /* NineSplitFlowLayout.h */,
-				B0858DEB19B70D84000C23B4 /* NineSplitFlowLayout.m */,
+				B0BEE5231BA2BE4100D4F481 /* NineSplitFlowLayout.m */,
 				B0858DF019B70EF6000C23B4 /* SixteenSplitFlowLayout.h */,
 				B0858DF119B70EF6000C23B4 /* SixteenSplitFlowLayout.m */,
 			);
@@ -619,12 +619,12 @@
 				B00EB14418D6DC9F00303DF2 /* MainAppDelegate.m in Sources */,
 				B0DD27401A318D02005C5845 /* TestButton.m in Sources */,
 				B0DD27431A318F0A005C5845 /* TestButtonViewController.m in Sources */,
-				B0858DEC19B70D84000C23B4 /* NineSplitFlowLayout.m in Sources */,
 				B0C43CA51919E35200F2A670 /* PageContentViewController.m in Sources */,
 				B0BBB4901A52846900F84D04 /* AlbumFullFlowLayout.m in Sources */,
 				B0BBB48D1A5280FA00F84D04 /* AlbumFullCollectionView.m in Sources */,
 				B06D6AD41999B6C40037DF27 /* MaterialButton.m in Sources */,
 				B09DFAA81987AE1C004174CE /* TestMpMoviePlayerViewController.m in Sources */,
+				B0BEE5241BA2BE4100D4F481 /* NineSplitFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

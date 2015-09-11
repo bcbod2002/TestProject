@@ -29,15 +29,13 @@
     [super prepareLayout];
 }
 
+-(CGSize)collectionViewContentSize
+{
+    return CGSizeMake(self.collectionView.frame.size.width * 4, self.collectionView.frame.size.height);
+}
+
 -(BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds
 {
-    return YES;
+    return NO;
 }
-
--(CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity
-{
-    CGFloat offsetAdjustment = MAXFLOAT;
-    return CGPointMake(proposedContentOffset.x + offsetAdjustment, proposedContentOffset.y);
-}
-
 @end

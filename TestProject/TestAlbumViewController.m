@@ -19,12 +19,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     CGRect screenRect = [UIScreen mainScreen].bounds;
-//    AlbumFullCollectionView *testAlbumFullView = [[AlbumFullCollectionView alloc] initWithFrame:CGRectMake(0, 0, screenRect.size.width, screenRect.size.height)];
-//    [self.view addSubview:testAlbumFullView];
+    AlbumFullCollectionView *testAlbumFullView = [[AlbumFullCollectionView alloc] initWithFrame:CGRectMake(0, 0, screenRect.size.width, screenRect.size.height)];
+    [self.view addSubview:testAlbumFullView];
     
-    AlbumNormalCollectionView *testAlbumNormalView = [[AlbumNormalCollectionView alloc] initWithFrame:CGRectMake(0, 0, screenRect.size.width, screenRect.size.height) WithWidthCellNumber:10];
+//    AlbumNormalCollectionView *testAlbumNormalView = [[AlbumNormalCollectionView alloc] initWithFrame:CGRectMake(0, 0, screenRect.size.width, screenRect.size.height) WithWidthCellNumber:10];
     NSLog(@"Before Add SubView");
-    [self.view addSubview:testAlbumNormalView];
+//    [self.view addSubview:testAlbumNormalView];
     NSLog(@"After Add Subview0");
     NSLog(@"After Add Subview1");
     NSLog(@"After Add Subview2");

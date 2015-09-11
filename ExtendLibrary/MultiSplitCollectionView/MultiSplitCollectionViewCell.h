@@ -8,7 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class MultiSplitCollectionViewCell;
+@protocol MultiSplitCollectionViewCellDelegate <NSObject>
+@required
+-(void)didDoubleTapCell;
+
+@end
+
 @interface MultiSplitCollectionViewCell : UICollectionViewCell<UIGestureRecognizerDelegate>
+
+@property (strong, nonatomic) id <MultiSplitCollectionViewCellDelegate> delegate;
+@property (strong, nonatomic, readwrite) NSIndexPath *indexPath;
 
 -(void)cellTransformParallelogram;
 

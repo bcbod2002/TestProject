@@ -28,16 +28,24 @@
         oneSplitFlowLayout = [[OneSplitFlowLayout alloc] init];
         nineSplitFlowLayout = [[NineSplitFlowLayout alloc] init];
         sixteenSplitFlowLayout = [[SixteenSplitFlowLayout alloc] init];
+        _previousSplitNumber = FoursplitNumber;
+        _nowSplitNumber = OneSplitNumber;
         
-//        splitCollectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:fourSplitFlowLayout];
-        splitCollectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:fourSplitFlowLayout];
+        [self setBackgroundColor:[UIColor darkGrayColor]];
+        splitCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height) collectionViewLayout:fourSplitFlowLayout];
          [splitCollectionView registerClass:[MultiSplitCollectionViewCell class] forCellWithReuseIdentifier:@"collectionViewCell"];
         splitCollectionView.delegate = self;
         splitCollectionView.dataSource = self;
         [splitCollectionView setPagingEnabled:YES];
+        [splitCollectionView setMultipleTouchEnabled:NO];
         [self addSubview:splitCollectionView];
         transformOneTag = NO;
-        NSLog(@"444");
+        
+        _nowPage = 0;
+        _totalPage = [splitCollectionView numberOfItemsInSection:0] / _nowSplitNumber;
+        
+        [splitCollectionView selectItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:YES scrollPosition:UICollectionViewScrollPositionLeft];
+        [self collectionView:splitCollectionView didSelectItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
     }
     return self;
 }
@@ -50,42 +58,39 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return _previousSplitNumber;
-//    return 8;
+    return 16;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     MultiSplitCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionViewCell" forIndexPath:indexPath];
-    UITapGestureRecognizer *tapTwiceOneSplit = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(transformIntoOneFlowLayout:)];
-    [tapTwiceOneSplit setNumberOfTapsRequired:2];
-    [cell addGestureRecognizer:tapTwiceOneSplit];
-    NSLog(@"what what");
+    [cell setIndexPath:indexPath];
+    [cell setDelegate:self];
+    
+    if (_selectedIndexPath == indexPath)
+    {
+        [cell.contentView.layer setBorderColor:[UIColor whiteColor].CGColor];
+    }
+    else
+    {
+        [cell.contentView.layer setBorderColor:[UIColor blueColor].CGColor];
+    }
+    
     return cell;
 }
 
 #pragma mark - UICollectionView Delegate
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [[collectionView cellForItemAtIndexPath:indexPath].layer setBorderColor:[UIColor redColor].CGColor];
-    NSLog(@"indexPath = %ld", indexPath.row);
+    CALayer *borderLayer = [collectionView cellForItemAtIndexPath:indexPath].contentView.layer;
+    [borderLayer setBorderColor:[UIColor whiteColor].CGColor];
+    _selectedIndexPath = indexPath;
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [[collectionView cellForItemAtIndexPath:indexPath].layer setBorderColor:[UIColor whiteColor].CGColor];
-}
-
-
-
--(void)extendCollectionCellWithSplitNumber:(NSInteger)splitNumber
-{
-    
-}
-
--(void)shrinkCollectionCell
-{
-    
+    CALayer *borderLayer = [collectionView cellForItemAtIndexPath:indexPath].contentView.layer;
+    [borderLayer setBorderColor:[UIColor blueColor].CGColor];
 }
 
 -(void)changeSplitFlowLayout:(SplitNumber)splitnumber
@@ -101,12 +106,14 @@
         case FoursplitNumber:
         {
             [splitCollectionView setCollectionViewLayout:fourSplitFlowLayout animated:YES];
+            [splitCollectionView setContentOffset:CGPointMake(splitCollectionView.frame.size.width * (_selectedIndexPath.row / FoursplitNumber), 0)];
             transformOneTag = NO;
             break;
         }
         case NineSplitNumber:
         {
             [splitCollectionView setCollectionViewLayout:nineSplitFlowLayout animated:YES];
+            [splitCollectionView setContentOffset:CGPointMake(splitCollectionView.frame.size.width * (_selectedIndexPath.row / NineSplitNumber), 0) animated:YES];
             transformOneTag = NO;
             break;
         }
@@ -120,52 +127,24 @@
         default:
             break;
     }
-    _previousSplitNumber = splitnumber;
-    if (_delegate && [_delegate respondsToSelector:@selector(splitFlowLayoutChangeFinished)])
+    _previousSplitNumber = _nowSplitNumber;
+    _nowSplitNumber = splitnumber;
+    if (_delegate && [_delegate respondsToSelector:@selector(collectionView:splitFlowLayoutChangeWithSplitNumber:)])
     {
-        [_delegate splitFlowLayoutChangeFinished];
+        [_delegate collectionView:self splitFlowLayoutChangeWithSplitNumber:splitnumber];
     }
 }
 
--(void)transformIntoOneFlowLayout:(UITapGestureRecognizer *)gesture
+#pragma mark - MultiSplitCollectionViewCell Delegate
+-(void)didDoubleTapCell
 {
-    if (transformOneTag)
+    if (_nowSplitNumber == OneSplitNumber)
     {
-        switch (_previousSplitNumber)
-        {
-            case OneSplitNumber:
-            {
-                [splitCollectionView setCollectionViewLayout:oneSplitFlowLayout animated:YES];
-                break;
-            }
-            case FoursplitNumber:
-            {
-                [splitCollectionView setCollectionViewLayout:fourSplitFlowLayout animated:YES];
-                break;
-            }
-            case NineSplitNumber:
-            {
-                [splitCollectionView setCollectionViewLayout:nineSplitFlowLayout animated:YES];
-                break;
-            }
-            case SixteenSplitNumber:
-            {
-                [splitCollectionView setCollectionViewLayout:sixteenSplitFlowLayout animated:YES];
-                break;
-            }
-                
-            default:
-                break;
-        }
-        transformOneTag = NO;
+        [self changeSplitFlowLayout:_previousSplitNumber];
     }
     else
     {
-        CGPoint initialDoubleTapPoint = [gesture locationInView:splitCollectionView];
-        NSIndexPath *doubleTappedCellIndexPath = [splitCollectionView indexPathForItemAtPoint:initialDoubleTapPoint];
-        [splitCollectionView setCollectionViewLayout:[[OneSplitFlowLayout alloc] init] animated:YES];
-        [splitCollectionView setContentOffset:CGPointMake(320 * doubleTappedCellIndexPath.row, 0) animated:YES];
-        transformOneTag = YES;
+        [self changeSplitFlowLayout:OneSplitNumber];
     }
 }
 
@@ -179,6 +158,11 @@
 -(void)condenseChosenCell
 {
     
+}
+
+-(void)setReloadData
+{
+    [splitCollectionView reloadData];
 }
 
 /*

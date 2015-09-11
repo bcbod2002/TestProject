@@ -11,5 +11,11 @@
 #import "FourSplitFlowLayout.h"
 
 @interface OrientationViewController : UIViewController <MultiSplitCollectionViewDelegate>
+- (IBAction)splitOneAction:(id)sender;
+- (IBAction)splitFourAction:(id)sender;
+- (IBAction)splitNineAction:(id)sender;
+- (IBAction)splitSixteenAction:(id)sender;
+
+- (IBAction)reloadAction:(id)sender;
 
 @end

@@ -13,6 +13,9 @@
 @end
 
 @implementation OrientationViewController
+{
+    MultiSplitCollectionView *testSplitCollectionView;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,12 +30,23 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    PictureManagerView *testPictureManagerView = [[PictureManagerView alloc] initWithFrame:CGRectMake(0, 124, 320, 270)];
-    MultiSplitCollectionView *testSplitCollectionView = [[MultiSplitCollectionView alloc] initWithFrame:CGRectMake(0, 100, 320, 240)];
+
+    testSplitCollectionView = [[MultiSplitCollectionView alloc] initWithFrame:CGRectMake(0, 100, 320, 240)];
     testSplitCollectionView.delegate = self;
     testSplitCollectionView.previousSplitNumber = FoursplitNumber;
     [self.view addSubview:testSplitCollectionView];
     
+    
+    UIView *testGradientView = [[UIView alloc] initWithFrame:CGRectMake(0, 360, 320, 120)];
+    [testGradientView setBackgroundColor:[UIColor greenColor]];
+    [self.view addSubview:testGradientView];
+    
+    CAGradientLayer *testGradientLayer = [CAGradientLayer layer];
+    [testGradientLayer setFrame:CGRectMake(0, 0, 320, 120)];
+    [testGradientLayer setColors:[NSArray arrayWithObjects:(__bridge id)[UIColor whiteColor].CGColor, (__bridge id)[UIColor colorWithWhite:1.0 alpha:0.0f].CGColor, nil]];
+    [testGradientLayer setStartPoint:CGPointMake(0, 0)];
+    [testGradientLayer setEndPoint:CGPointMake(0, 1)];
+    [testGradientView.layer addSublayer:testGradientLayer];
 }
 
 -(void)splitFlowLayoutChangeFinished
@@ -57,4 +71,28 @@
 }
 */
 
+- (IBAction)splitOneAction:(id)sender
+{
+    [testSplitCollectionView changeSplitFlowLayout:OneSplitNumber];
+}
+
+- (IBAction)splitFourAction:(id)sender
+{
+    [testSplitCollectionView changeSplitFlowLayout:FoursplitNumber];
+}
+
+- (IBAction)splitNineAction:(id)sender
+{
+    [testSplitCollectionView changeSplitFlowLayout:NineSplitNumber];
+}
+
+- (IBAction)splitSixteenAction:(id)sender
+{
+    [testSplitCollectionView changeSplitFlowLayout:SixteenSplitNumber];
+}
+
+- (IBAction)reloadAction:(id)sender
+{
+    [testSplitCollectionView setReloadData];
+}
 @end

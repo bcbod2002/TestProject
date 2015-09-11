@@ -32,7 +32,6 @@
 //    [self progressViewTest];
 //    [self createAppNotificationMessage];
     [self CreateMaterialButton];
-<<<<<<< HEAD
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setObject:@"1234" forKey:@"33"];
@@ -43,10 +42,8 @@
     
     NSString *tmpString = [NSString stringWithFormat:@"娃娃 = %d", 33];
     NSLog(@"tmpString = %@", tmpString);
-=======
 
     [self objectCFunctionCallBack];
->>>>>>> FETCH_HEAD
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -735,12 +732,5 @@ int cCallBackFunctionTest(int one, int two, int three, float four)
 //{
 //    [super viewDidUnload];
 //}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
